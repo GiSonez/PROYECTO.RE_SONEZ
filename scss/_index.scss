@@ -1,0 +1,214 @@
+
+.main_index{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px 0 40px 0;
+	@media (min-width: 768px){
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: $textCenter;
+		margin-bottom: 5px;	
+		}
+	@media (min-width: 1024px){
+		align-items: stretch;
+		margin-bottom: 25px;
+		}
+	@media (min-width: 1200px){
+		margin-bottom: 30px;
+		}
+}
+
+	.main_index__img{
+		width: 400px;
+		height: auto;
+		margin-bottom: 50px;
+		@media (min-width: 768px){
+			width: 1600px;
+			height: auto;
+			}
+		@media (min-width: 1200px){
+			width: 1700px;
+			}
+	}
+
+	.main_index__text{
+		margin: 0 40px;
+		@media (min-width: 768px){
+			margin-bottom: 40px;
+			margin-right: 20px;
+			}
+		@media (min-width: 1024px){
+			margin: 50px 20px 0 55px;
+			}
+		@media (min-width: 1200px){
+			margin: 80px 20px 0 80px;
+			}
+		h1{
+			text-align: $textLeft;
+			font-size: $textSm;
+			font-weight: $textBold;
+			line-height: 2.6rem;
+			@media (min-width: 1024px){
+				font-size: $textLg;
+				line-height: 2.8rem;
+				}
+			@media (min-width: 1200px){
+				font-size: $textXl;
+				line-height: 3rem;
+				}
+		}
+		p{
+			text-align: $textLeft;
+			font-size: $textSm;
+			line-height: 2.6rem;
+			@media (min-width: 1024px){
+				font-size: $textLg;
+				line-height: 2.8rem;
+				}
+			@media (min-width: 1200px){
+				font-size: $textXl;
+				line-height: 3rem;
+				}
+		}
+				
+	}
+
+.aside_index{
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@media (min-width: 768px){
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: stretch;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		}
+	@media (min-width: 1024px){
+		padding-top: 20px;
+		padding-bottom: 20px;
+		}
+	@media (min-width: 1200px){
+		padding-top: 30px;
+		padding-bottom: 30px;
+		}
+	h3{
+		font-size: $textSm;
+		line-height: 2.6rem;
+		@media (min-width: 768px){
+			line-height: 2.2rem;
+			}
+		@media (min-width: 1024px){
+			font-size: $textMd;
+			line-height: 2.8rem;
+			}
+		@media (min-width: 1200px){
+			font-size: $textXl;
+			line-height: 3.2rem;
+			}
+	}
+	p{
+		text-align: $textJust;
+		font-size: $textSm;
+		line-height: 2.6rem;
+		@media (min-width: 768px){
+			font-size: 1.2rem;
+			line-height: 2.2rem;	
+			}
+		@media (min-width: 1024px){
+			font-size: $textMd;
+			line-height: 2.8rem;	
+			}
+		@media (min-width: 1200px){
+			font-size: $textXl;
+			line-height: 3.2rem;	
+			}
+	}
+	.card{
+		width: 250px;
+		margin-bottom: 40px;
+		@media (min-width: 768px){
+			width: 200px;
+			}
+		@media (min-width: 1024px){
+			width: 260px;
+			}
+		@media (min-width: 1200px){
+			width: 320px;
+			}
+	}
+}
+
+
+.card_presup{
+	background-color: $colorBeige;
+	margin-bottom: 40px;
+	width: 280px;
+	height: 140px;
+	border: none;
+	text-align: $textCenter;
+	@media (min-width: 768px){
+		width: 400px;
+		height: 200px;
+		margin-bottom: 50px;
+		padding-top: 20px;
+		border: solid white 1px;
+		}
+	@media (min-width: 1200px){
+		width: 500px;
+		height: 250px;
+		margin-bottom: 70px;
+		padding-top: 40px;
+		}
+	p{
+		color: white;
+		text-shadow: grey 0.05rem 0.05rem;
+		font-size: $textSm;
+		line-height: 2.6rem;
+		padding: 15px 0;
+		@media (min-width: 768px){
+			font-size: $textLg;
+			line-height: 3rem;
+			padding: 15px 0;
+			}
+		@media (min-width: 1024px){
+			font-size: $textXl;
+			line-height: 3.2rem;
+			padding: 15px 0;
+			}
+		@media (min-width: 1200px){
+			font-size: 1.8rem;
+			line-height: 3.6rem;
+			}
+	}
+	a{
+		text-decoration: none;
+		color: white;
+		text-shadow: grey 0.05rem 0.05rem;
+		font-weight: 500;
+		font-size:$textSm;
+		padding: 10px;
+		border: solid white 1px;
+		@media (min-width: 768px){
+			font-size: $textLg;
+			padding: 15px;
+			}
+		@media (min-width: 1024px){
+			font-size: $textXl;
+			line-height: 3.2rem;
+			padding: 15px;
+			}
+		@media (min-width: 1200px){
+			font-size: 1.8rem;
+			line-height: 3.6rem;
+			padding: 20px;
+			}
+	}
+}
+
+	
+
+	

@@ -1,0 +1,37 @@
+
+nav{
+	background-color: white;
+	margin: 0 10px;
+	@media (min-width: 768px){
+		margin: 0 10px 10px 30px;
+		font-size: $textMd;
+		}
+	@media (min-width: 1024px){
+		margin: 15px 15px 10px 50px;
+		}
+	@media (min-width: 1200px){
+		margin: 15px 20px 10px 70px;
+		font-size: $textLg;
+		}
+	ul{
+		li{
+			a{
+				&:hover{
+					color: $textBold;
+				}
+			}
+
+		}
+	}
+}
+
+
+.nav_logo{
+	width: 120px;
+	@media (min-width: 1024px){
+		width: 130px;
+		}
+	@media (min-width: 1200px){
+		width: 160px;
+		}
+	}

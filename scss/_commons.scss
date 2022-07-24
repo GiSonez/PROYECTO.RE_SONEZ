@@ -1,0 +1,56 @@
+
+html{
+	font-size: 62.5%;
+	}
+
+* {
+	font-family: $mainFont;
+	font-weight: $textRegular;
+	color:$black;
+	}
+
+
+//barra titular en beige
+
+.titulo{
+	background-color: $colorBeige;
+	height: 60px;
+	margin-bottom: 50px;
+	@media (min-width: 768px){
+		height: 70px;
+		}
+	@media (min-width: 1024px){
+		height: 80px;
+		}
+	@media (min-width: 1200px){
+		height: 90px;
+		}
+
+	h2,h1 {
+		padding-top: 15px;
+		color: white;
+		text-shadow: grey 0.2rem 0.2rem;
+		text-align: $textCenter;
+		font-size: 2rem;
+		letter-spacing: 0.4rem;
+		word-spacing: 0.8rem;
+		@media (min-width: 768px){
+			padding-top: 20px;
+			font-size: 2.4rem;
+			letter-spacing: 0.6rem;
+			word-spacing: 1rem;
+			}
+		@media (min-width: 1024px){
+			padding-top: 25px;
+			font-size: 2.6rem;
+			letter-spacing: 0.8rem;
+			word-spacing: 1.2rem;
+			}
+		@media (min-width: 1200px){
+			padding-top: 30px;
+			font-size: 2.8rem;
+			letter-spacing: 1rem;
+			word-spacing: 1.4rem;
+			}
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "name": "desafio-7_sass",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch scss/style.scss  css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GiSonez/PROYECTO.RE_SONEZ.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GiSonez/PROYECTO.RE_SONEZ/issues"
+  },
+  "homepage": "https://github.com/GiSonez/PROYECTO.RE_SONEZ#readme",
+  "dependencies": {
+    "sass": "^1.54.0"
+  }
+}
