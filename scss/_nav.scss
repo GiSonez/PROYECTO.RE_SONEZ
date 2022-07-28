@@ -1,16 +1,16 @@
 
 nav{
 	background-color: white;
-	margin: 0 10px;
+	margin: 10px;
 	@media (min-width: 768px){
-		margin: 0 10px 10px 30px;
+		margin: 10px 10px 10px 30px;
 		font-size: $textMd;
 		}
 	@media (min-width: 1024px){
-		margin: 15px 15px 10px 50px;
+		margin: 15px 15px 15px 50px;
 		}
 	@media (min-width: 1200px){
-		margin: 15px 20px 10px 70px;
+		margin: 20px 20px 20px 70px;
 		font-size: $textLg;
 		}
 	ul{

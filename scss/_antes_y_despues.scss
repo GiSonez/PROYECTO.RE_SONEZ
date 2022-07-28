@@ -30,18 +30,18 @@
 }
 
 .article_ayd{
-	padding: 15px 5px 15px 30px;
+	padding: 20px 20px 10px 20px;
 	@media (min-width: 768px){
-		padding: 20px 10px 20px 60px;
+		padding: 20px 15px 20px 50px;
 		}
 	@media (min-width: 1024px){
-		padding: 25px 15px 25px 90px;
+		padding: 25px 20px 25px 60px;
 		}
 	@media (min-width: 1200px){
-		padding: 30px 30px 30px 150px;
+		padding: 30px 30px 30px 90px;
 		}
 	img{
-		border: solid 1px lightgray;
+		border: none;
 		&:hover{
 			transform: scale(1.2);
 			cursor: pointer;
@@ -51,18 +51,18 @@
 
 
 .article_ayd_2{
-	padding: 15px 30px 15px 5px;
+	padding: 10px 20px 20px 20px;
 	@media (min-width: 768px){
-		padding: 20px 60px 20px 10px;
+		padding: 20px 50px 20px 15px;
 		}
 	@media (min-width: 1024px){
-		padding: 25px 90px 25px 15px;
+		padding: 25px 60px 25px 20px;
 		}
 	@media (min-width: 1200px){
-		padding: 30px 150px 30px 30px;
+		padding: 30px 90px 30px 30px;
 		}
 	img{
-		border: solid 1px lightgray;
+		border: none;
 		&:hover{
 			transform: scale(1.2);
 			cursor: pointer;
