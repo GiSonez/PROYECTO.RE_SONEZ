@@ -1,22 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
+.btn_base, .btn_tienda, .btn_form_2, .formulario .btn_form {
+  background: linear-gradient(to top, #EFEAD1, white);
+  width: 80px;
+  height: 25px;
+  margin-right: 10px;
+  border: none;
+  color: #3F3C3C;
+  font-size: 1.2rem;
+}
+
 nav {
   background-color: white;
-  margin: 10px;
+  margin: 10px 10px 10px 30px;
 }
 @media (min-width: 768px) {
   nav {
-    margin: 10px 10px 10px 30px;
+    margin: 20px 10px 20px 30px;
     font-size: 1.4rem;
   }
 }
 @media (min-width: 1024px) {
   nav {
-    margin: 15px 15px 15px 50px;
+    margin: 20px 15px 20px 50px;
   }
 }
 @media (min-width: 1200px) {
   nav {
-    margin: 20px 20px 20px 70px;
+    margin: 25px 30px 25px 75px;
     font-size: 1.5rem;
   }
 }
@@ -25,16 +35,21 @@ nav ul li a:hover {
 }
 
 .nav_logo {
-  width: 120px;
+  width: 100px;
+}
+@media (min-width: 768px) {
+  .nav_logo {
+    width: 105px;
+  }
 }
 @media (min-width: 1024px) {
   .nav_logo {
-    width: 130px;
+    width: 120px;
   }
 }
 @media (min-width: 1200px) {
   .nav_logo {
-    width: 160px;
+    width: 140px;
   }
 }
 
@@ -49,78 +64,80 @@ html {
 }
 
 .titulo {
-  background-color: #F4E390;
-  height: 60px;
+  background-color: #d9b592;
+  height: 50px;
   margin-bottom: 50px;
 }
 @media (min-width: 768px) {
   .titulo {
+    height: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .titulo {
     height: 70px;
   }
 }
-@media (min-width: 1024px) {
-  .titulo {
-    height: 80px;
-  }
-}
-@media (min-width: 1200px) {
-  .titulo {
-    height: 90px;
-  }
-}
 .titulo h2, .titulo h1 {
-  padding-top: 15px;
+  font-size: 1.8rem;
+  line-height: 0;
+  word-spacing: 0.5rem;
+  letter-spacing: 0.5rem;
   color: white;
-  text-shadow: grey 0.2rem 0.2rem;
+  padding-top: 25px;
   text-align: center;
-  font-size: 2rem;
-  letter-spacing: 0.4rem;
-  word-spacing: 0.8rem;
 }
 @media (min-width: 768px) {
   .titulo h2, .titulo h1 {
-    padding-top: 20px;
-    font-size: 2.4rem;
+    font-size: 2.1rem;
+    line-height: 0;
+    word-spacing: 0.6rem;
     letter-spacing: 0.6rem;
-    word-spacing: 1rem;
+    color: white;
+    padding-top: 30px;
   }
 }
 @media (min-width: 1024px) {
   .titulo h2, .titulo h1 {
-    padding-top: 25px;
-    font-size: 2.6rem;
+    font-size: 2.3rem;
+    line-height: 0;
+    word-spacing: 0.8rem;
     letter-spacing: 0.8rem;
-    word-spacing: 1.2rem;
+    color: white;
+    padding-top: 35px;
   }
 }
 @media (min-width: 1200px) {
   .titulo h2, .titulo h1 {
-    padding-top: 30px;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
+    line-height: 0;
+    word-spacing: 1rem;
     letter-spacing: 1rem;
-    word-spacing: 1.4rem;
+    color: white;
+    padding-top: 35px;
   }
 }
 
 .main_index {
-  background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  background-color: white;
   margin: 5px 0 40px 0;
 }
 @media (min-width: 768px) {
   .main_index {
     display: flex;
     flex-direction: row-reverse;
+    justify-content: center;
     align-items: center;
     margin-bottom: 5px;
   }
 }
 @media (min-width: 1024px) {
   .main_index {
-    align-items: stretch;
-    margin-bottom: 25px;
+    margin-bottom: 20px;
   }
 }
 @media (min-width: 1200px) {
@@ -157,19 +174,20 @@ html {
 }
 @media (min-width: 1024px) {
   .main_index__text {
-    margin: 50px 20px 0 55px;
+    margin: 0 20px 0 55px;
+    padding-bottom: 40px;
   }
 }
 @media (min-width: 1200px) {
   .main_index__text {
-    margin: 80px 20px 0 80px;
+    margin: 0 20px 0 80px;
   }
 }
 .main_index__text h1 {
   text-align: left;
   font-size: 1.3rem;
   font-weight: 600;
-  line-height: 2.6rem;
+  line-height: 2.4rem;
 }
 @media (min-width: 1024px) {
   .main_index__text h1 {
@@ -186,7 +204,7 @@ html {
 .main_index__text p {
   text-align: left;
   font-size: 1.3rem;
-  line-height: 2.6rem;
+  line-height: 2.4rem;
 }
 @media (min-width: 1024px) {
   .main_index__text p {
@@ -202,13 +220,14 @@ html {
 }
 
 .aside_index {
-  background-color: white;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 @media (min-width: 768px) {
   .aside_index {
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
@@ -293,84 +312,88 @@ html {
 }
 
 .card_presup {
-  background-color: #F4E390;
+  background-color: #d9b592;
   margin-bottom: 40px;
-  width: 280px;
-  height: 140px;
+  width: 240px;
+  height: 120px;
   border: none;
   text-align: center;
 }
 @media (min-width: 768px) {
   .card_presup {
-    width: 400px;
-    height: 200px;
+    width: 300px;
+    height: 150px;
     margin-bottom: 50px;
     padding-top: 20px;
-    border: solid white 1px;
+  }
+}
+@media (min-width: 1024px) {
+  .card_presup {
+    width: 360px;
+    height: 180px;
+    margin-bottom: 60px;
+    padding-top: 30px;
   }
 }
 @media (min-width: 1200px) {
   .card_presup {
-    width: 500px;
-    height: 250px;
+    width: 420px;
+    height: 210px;
     margin-bottom: 70px;
     padding-top: 40px;
   }
 }
 .card_presup p {
   color: white;
-  text-shadow: grey 0.05rem 0.05rem;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
+  font-weight: 400;
   line-height: 2.6rem;
-  padding: 15px 0;
+  padding: 10px 0;
 }
 @media (min-width: 768px) {
   .card_presup p {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 3rem;
-    padding: 15px 0;
+    padding: 0 0 10px 0;
   }
 }
 @media (min-width: 1024px) {
   .card_presup p {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 3.2rem;
-    padding: 15px 0;
+    padding: 0 0 10px 0;
   }
 }
 @media (min-width: 1200px) {
   .card_presup p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     line-height: 3.6rem;
   }
 }
 .card_presup a {
   text-decoration: none;
   color: white;
-  text-shadow: grey 0.05rem 0.05rem;
-  font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 10px;
   border: solid white 1px;
 }
 @media (min-width: 768px) {
   .card_presup a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     padding: 15px;
   }
 }
 @media (min-width: 1024px) {
   .card_presup a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     line-height: 3.2rem;
-    padding: 15px;
+    border: solid white 1.5px;
   }
 }
 @media (min-width: 1200px) {
   .card_presup a {
-    font-size: 1.8rem;
-    line-height: 3.6rem;
-    padding: 20px;
+    font-size: 1.5rem;
+    line-height: 3.8rem;
   }
 }
 
@@ -380,7 +403,7 @@ html {
 }
 @media (min-width: 768px) {
   .text_taller {
-    padding: 30px 10px 30px 40px;
+    padding: 30px 10px 30px 30px;
   }
 }
 @media (min-width: 1024px) {
@@ -390,7 +413,7 @@ html {
 }
 @media (min-width: 1200px) {
   .text_taller {
-    padding: 40px 10px 40px 50px;
+    padding: 40px 10px 40px 75px;
   }
 }
 .text_taller p {
@@ -507,12 +530,12 @@ html {
 }
 @media (min-width: 1024px) {
   .main_ayd_text {
-    margin: 50px 70px;
+    margin: 50px 50px;
   }
 }
 @media (min-width: 1200px) {
   .main_ayd_text {
-    margin: 40px 90px;
+    margin: 40px 75px;
   }
 }
 .main_ayd_text p {
@@ -663,24 +686,55 @@ html {
   }
 }
 .formulario .btn_form {
-  margin-left: 15px;
-  background: linear-gradient(to top, #EFEAD1, white);
   color: gray;
+}
+@media (min-width: 768px) {
+  .formulario .btn_form {
+    margin-top: 5px;
+    width: 85px;
+    height: 30px;
+  }
 }
 @media (min-width: 1024px) {
   .formulario .btn_form {
-    margin-left: 25px;
+    margin-right: 30px;
     margin-top: 10px;
-    width: 80px;
-    font-size: 1.2rem;
+    width: 100px;
+    height: 35px;
+    font-size: 1.3rem;
   }
 }
 @media (min-width: 1200px) {
   .formulario .btn_form {
+    margin-right: 45px;
+    margin-top: 15px;
+  }
+}
+
+.btn_form_2 {
+  color: gray;
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
+  .btn_form_2 {
+    margin-top: 5px;
+    width: 85px;
+    height: 30px;
+  }
+}
+@media (min-width: 1024px) {
+  .btn_form_2 {
+    margin-left: 25px;
+    margin-top: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1200px) {
+  .btn_form_2 {
     margin-left: 35px;
     margin-top: 15px;
-    width: 90px;
-    font-size: 1.3rem;
   }
 }
 
@@ -690,7 +744,7 @@ html {
 }
 @media (min-width: 768px) {
   .tienda {
-    padding: 20px 50px;
+    padding: 20px 40px;
   }
 }
 @media (min-width: 1024px) {
@@ -772,15 +826,14 @@ html {
 }
 
 .btn_tienda {
-  background: linear-gradient(to top, #EFEAD1, white);
   color: #3F3C3C;
-  font-size: 1.2rem;
-  width: 100px;
+  width: 90px;
 }
 @media (min-width: 768px) {
   .btn_tienda {
     font-size: 1.3rem;
     width: 110px;
+    height: 30px;
   }
 }
 @media (min-width: 1024px) {

@@ -4,15 +4,15 @@
 	width: 80%;
 	padding: 20px;
 	margin: 5px;
-	@media (min-width: 768px){
+	@include medias(Md){
 		padding: 25px;
 		margin: 10px;
 		}
-	@media (min-width: 1024px){
+	@include medias(Lg){
 		padding: 30px;
 		margin: 15px;
 		}
-	@media (min-width: 1200px){
+	@include medias(Xl){
 		padding: 40px;
 		margin: 40px;
 		}
@@ -20,11 +20,11 @@
 		text-align: $textJust;
 		font-size: $textMd;
 		line-height: 2rem;
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			font-size: $textLg;
 			line-height: 3.2rem;
 			}
-		@media (min-width: 1200px){
+		@include medias(Xl){
 			font-size: $textXl;
 			line-height: 3.6rem;
 			}
@@ -33,42 +33,67 @@
 		text-align: $textJust;
 		font-size: $textSm;
 		line-height: 2rem;
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			font-size: $textMd;
 			line-height: 2rem;
 			}
-		@media (min-width: 1200px){
+		@include medias(Xl){
 			font-size: $textLg;
 			line-height: 3.2rem;
 			}
 	}
 	fieldset{
 		margin-left: 15px;
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			margin-left: 25px;
 			}
-		@media (min-width: 1200px){
+		@include medias(Xl){
 			margin-left: 35px;
 			}
 	}
 	.btn_form{
-		margin-left: 15px;
-		background: linear-gradient(to top, $colorGris, white);
+		@extend .btn_base;
 		color: gray;
-		@media (min-width: 1024px){
-			margin-left: 25px;
-			margin-top: 10px;
-			width: 80px;
-			font-size: 1.2rem;
+		@include medias(Md){
+			margin-top: 5px;
+			width: 85px;
+			height: 30px;
 			}
-		@media (min-width: 1200px){
-			margin-left: 35px;
+		@include medias(Lg){
+			margin-right: 30px;
+			margin-top: 10px;
+			width: 100px;
+			height: 35px;
+			font-size: $textSm;
+			}
+		@include medias(Xl){	
+			margin-right: 45px;
 			margin-top: 15px;
-			width: 90px;
-			font-size: 1.3rem;
 			}
 	}		
 }
+
+.btn_form_2{
+		@extend .btn_base;
+		color: gray;
+		margin-left: 15px;
+		@include medias(Md){
+			margin-top: 5px;
+			width: 85px;
+			height: 30px;
+			}
+		@include medias(Lg){
+			margin-left: 25px;
+			margin-top: 10px;
+			width: 100px;
+			height: 35px;
+			font-size: $textSm;
+			}
+		@include medias(Xl){
+			margin-left: 35px;
+			margin-top: 15px;
+			}
+	}		
 
 
 

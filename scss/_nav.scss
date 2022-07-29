@@ -1,16 +1,16 @@
 
 nav{
 	background-color: white;
-	margin: 10px;
-	@media (min-width: 768px){
-		margin: 10px 10px 10px 30px;
+	margin: 10px 10px 10px 30px;
+	@include medias(Md){
+		margin: 20px 10px 20px 30px;
 		font-size: $textMd;
 		}
-	@media (min-width: 1024px){
-		margin: 15px 15px 15px 50px;
+	@include medias(Lg){
+		margin: 20px 15px 20px 50px;
 		}
-	@media (min-width: 1200px){
-		margin: 20px 20px 20px 70px;
+	@include medias(Xl){
+		margin: 25px 30px 25px 75px;
 		font-size: $textLg;
 		}
 	ul{
@@ -27,11 +27,14 @@ nav{
 
 
 .nav_logo{
-	width: 120px;
-	@media (min-width: 1024px){
-		width: 130px;
+	width: 100px;
+	@include medias(Md){
+		width: 105px;
 		}
-	@media (min-width: 1200px){
-		width: 160px;
+	@include medias(Lg){
+		width: 120px;
+		}
+	@include medias(Xl){
+		width: 140px;
 		}
 	}

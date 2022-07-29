@@ -2,24 +2,24 @@
 .text_taller{
 	border: none;
 	padding: 30px;
-	@media (min-width: 768px){
-		padding: 30px 10px 30px 40px;
+	@include medias(Md){
+		padding: 30px 10px 30px 30px;
 		}
-	@media (min-width: 1024px){
+	@include medias(Lg){
 		padding: 30px 10px 30px 50px;
 		}
-	@media (min-width: 1200px){
-		padding: 40px 10px 40px 50px;
+	@include medias(Xl){
+		padding: 40px 10px 40px 75px;
 		}
 	p{
 		text-align: $textLeft;
 		font-size: $textSm;
 		line-height: 2.6rem;
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			font-size: $textMd;
 			line-height: 2.8rem;
 			}
-		@media (min-width: 1200px){
+		@include medias(Xl){
 			font-size: $textXl;
 			line-height: 3.2rem;
 			}
@@ -33,24 +33,24 @@
 
 .img_taller{
 	border: none;
-	@media (min-width: 768px){
+	@include medias(Md){
 		padding: 30px 10px 0 10px;
 		}
-	@media (min-width: 1024px){
+	@include medias(Lg){
 		padding: 35px 30px 40px 10px;
 		}
-	@media (min-width: 1200px){
+	@include medias(Xl){
 		padding: 40px 40px 0 10px;
 		}
 	img{
 		height: 150px;
-		@media (min-width: 768px){
+		@include medias(Md){
 			height: 180px;	
 			}
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			height: 240px;	
 			}
-			@media (min-width: 1200px){
+		@include medias(Xl){
 			height: 280px;	
 			}
 	}
@@ -58,16 +58,16 @@
 
 .slide{
 	margin: 0 30px 5px 30px;
-	@media (min-width: 768px){
+	@include medias(Md){
 		margin: 5px;
 	}
 }
 
 .caja_mueble{
-	@media (min-width: 768px){
+	@include medias(Md){
 		padding: 20px;
 		}
-	@media (min-width: 1200px){
+	@include medias(Xl){
 		padding: 30px;
 		}
 	img{
@@ -77,13 +77,13 @@
 		transform: rotateZ(360deg);
 		transition: transform 2s;
 		cursor: pointer;
-			@media (min-width: 768px){
+			@include medias(Md){
 				width: 100px;
 				}
-			@media (min-width: 1024px){
+			@include medias(Lg){
 				width: 120px;
 				}
-			@media (min-width: 1200px){
+			@include medias(Xl){
 				width: 140px;
 				}
 		}

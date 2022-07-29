@@ -1,21 +1,16 @@
 
 .main_index{
+	@include d-flex(column, center, center);
 	background-color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
 	margin: 5px 0 40px 0;
-	@media (min-width: 768px){
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: $textCenter;
+	@include medias(Md){
+		@include d-flex(row-reverse, center, center);
 		margin-bottom: 5px;	
 		}
-	@media (min-width: 1024px){
-		align-items: stretch;
-		margin-bottom: 25px;
+	@include medias(Lg){
+		margin-bottom: 20px;
 		}
-	@media (min-width: 1200px){
+	@include medias(Xl){
 		margin-bottom: 30px;
 		}
 }
@@ -24,37 +19,38 @@
 		width: 400px;
 		height: auto;
 		margin-bottom: 50px;
-		@media (min-width: 768px){
+		@include medias(Md){
 			width: 1600px;
 			height: auto;
 			}
-		@media (min-width: 1200px){
+		@include medias(Xl){
 			width: 1700px;
 			}
 	}
 
 	.main_index__text{
 		margin: 0 40px;
-		@media (min-width: 768px){
+		@include medias(Md){
 			margin-bottom: 40px;
 			margin-right: 20px;
 			}
-		@media (min-width: 1024px){
-			margin: 50px 20px 0 55px;
+		@include medias(Lg){
+			margin: 0 20px 0 55px;
+			padding-bottom: 40px;
 			}
-		@media (min-width: 1200px){
-			margin: 80px 20px 0 80px;
+		@include medias(Xl){
+			margin: 0 20px 0 80px;
 			}
 		h1{
 			text-align: $textLeft;
 			font-size: $textSm;
 			font-weight: $textBold;
-			line-height: 2.6rem;
-			@media (min-width: 1024px){
+			line-height: 2.4rem;
+			@include medias(Lg){
 				font-size: $textLg;
 				line-height: 2.8rem;
 				}
-			@media (min-width: 1200px){
+			@include medias(Xl){
 				font-size: $textXl;
 				line-height: 3rem;
 				}
@@ -62,12 +58,12 @@
 		p{
 			text-align: $textLeft;
 			font-size: $textSm;
-			line-height: 2.6rem;
-			@media (min-width: 1024px){
+			line-height: 2.4rem;
+			@include medias(Lg){
 				font-size: $textLg;
 				line-height: 2.8rem;
 				}
-			@media (min-width: 1200px){
+			@include medias(Xl){
 				font-size: $textXl;
 				line-height: 3rem;
 				}
@@ -76,36 +72,31 @@
 	}
 
 .aside_index{
-	background-color: white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	@media (min-width: 768px){
-		flex-direction: row;
-		justify-content: space-around;
-		align-items: stretch;
+	@include d-flex(column, center, center);
+	@include medias(Md){
+		@include d-flex(row, space-around, stretch);
 		padding-top: 20px;
 		padding-bottom: 20px;
 		}
-	@media (min-width: 1024px){
+	@include medias(Lg){
 		padding-top: 20px;
 		padding-bottom: 20px;
 		}
-	@media (min-width: 1200px){
+	@include medias(Xl){
 		padding-top: 30px;
 		padding-bottom: 30px;
 		}
 	h3{
 		font-size: $textSm;
 		line-height: 2.6rem;
-		@media (min-width: 768px){
+		@include medias(Md){
 			line-height: 2.2rem;
 			}
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			font-size: $textMd;
 			line-height: 2.8rem;
 			}
-		@media (min-width: 1200px){
+		@include medias(Xl){
 			font-size: $textXl;
 			line-height: 3.2rem;
 			}
@@ -114,15 +105,15 @@
 		text-align: $textJust;
 		font-size: $textSm;
 		line-height: 2.6rem;
-		@media (min-width: 768px){
+		@include medias(Md){
 			font-size: 1.2rem;
 			line-height: 2.2rem;	
 			}
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			font-size: $textMd;
 			line-height: 2.8rem;	
 			}
-		@media (min-width: 1200px){
+		@include medias(Xl){
 			font-size: $textXl;
 			line-height: 3.2rem;	
 			}
@@ -130,13 +121,13 @@
 	.card{
 		width: 250px;
 		margin-bottom: 40px;
-		@media (min-width: 768px){
+		@include medias(Md){
 			width: 200px;
 			}
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			width: 260px;
 			}
-		@media (min-width: 1200px){
+		@include medias(Xl){
 			width: 320px;
 			}
 	}
@@ -144,67 +135,69 @@
 
 
 .card_presup{
-	background-color: $colorBeige;
+	background-color: map-get($map:$paletaBeige,$key:"cuatro");
 	margin-bottom: 40px;
-	width: 280px;
-	height: 140px;
+	width: 240px;
+	height: 120px;
 	border: none;
 	text-align: $textCenter;
-	@media (min-width: 768px){
-		width: 400px;
-		height: 200px;
+	@include medias(Md){
+		width: 300px;
+		height: 150px;
 		margin-bottom: 50px;
 		padding-top: 20px;
-		border: solid white 1px;
 		}
-	@media (min-width: 1200px){
-		width: 500px;
-		height: 250px;
+	@include medias(Lg){
+		width: 360px;
+		height: 180px;
+		margin-bottom: 60px;
+		padding-top: 30px;
+		}
+	@include medias(Xl){
+		width: 420px;
+		height: 210px;
 		margin-bottom: 70px;
 		padding-top: 40px;
 		}
 	p{
 		color: white;
-		text-shadow: grey 0.05rem 0.05rem;
-		font-size: $textSm;
+		font-size: 1.2rem;
+		font-weight: 400;
 		line-height: 2.6rem;
-		padding: 15px 0;
-		@media (min-width: 768px){
-			font-size: $textLg;
+		padding: 10px 0;
+		@include medias(Md){
+			font-size: $textSm;
 			line-height: 3rem;
-			padding: 15px 0;
+			padding: 0 0 10px 0;
 			}
-		@media (min-width: 1024px){
-			font-size: $textXl;
+		@include medias(Lg){
+			font-size: $textMd;
 			line-height: 3.2rem;
-			padding: 15px 0;
+			padding: 0 0 10px 0;
 			}
-		@media (min-width: 1200px){
-			font-size: 1.8rem;
+		@include medias(Xl){
+			font-size: $textLg;
 			line-height: 3.6rem;
 			}
 	}
 	a{
 		text-decoration: none;
 		color: white;
-		text-shadow: grey 0.05rem 0.05rem;
-		font-weight: 500;
-		font-size:$textSm;
+		font-size:1.2rem;
 		padding: 10px;
 		border: solid white 1px;
-		@media (min-width: 768px){
-			font-size: $textLg;
+		@include medias(Md){
+			font-size: $textSm;
 			padding: 15px;
 			}
-		@media (min-width: 1024px){
-			font-size: $textXl;
+		@include medias(Lg){
+			font-size: $textMd;
 			line-height: 3.2rem;
-			padding: 15px;
+			border: solid white 1.5px;
 			}
-		@media (min-width: 1200px){
-			font-size: 1.8rem;
-			line-height: 3.6rem;
-			padding: 20px;
+		@include medias(Xl){
+			font-size: $textLg;
+			line-height: 3.8rem;
 			}
 	}
 }

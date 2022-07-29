@@ -1,28 +1,28 @@
 
 .main_ayd_text{
 	margin: 0 30px 30px 30px;
-	@media (min-width: 768px){
+	@include medias(Md){
 		margin: 0 40px 40px 50px;
 		}
-	@media (min-width: 1024px){
-		margin: 50px 70px;
+	@include medias(Lg){
+		margin: 50px 50px;
 		}
-	@media (min-width: 1200px){
-		margin: 40px 90px;
+	@include medias(Xl){
+		margin: 40px 75px;
 		}
 	p{
 		text-align: $textLeft;
 		font-size: $textSm;
 		line-height: 2.6rem;
-		@media (min-width: 768px){
+		@include medias(Md){
 			font-size: $textMd;
 			line-height: 2.8rem;
 			}
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			font-size: $textLg;
 			line-height: 3rem;
 			}
-		@media (min-width: 1200px){
+		@include medias(Xl){
 			font-size: $textXl;
 			line-height: 3.2rem;
 			}
@@ -31,13 +31,13 @@
 
 .article_ayd{
 	padding: 20px 20px 10px 20px;
-	@media (min-width: 768px){
+	@include medias(Md){
 		padding: 20px 15px 20px 50px;
 		}
-	@media (min-width: 1024px){
+	@include medias(Lg){
 		padding: 25px 20px 25px 60px;
 		}
-	@media (min-width: 1200px){
+	@include medias(Xl){
 		padding: 30px 30px 30px 90px;
 		}
 	img{
@@ -52,13 +52,13 @@
 
 .article_ayd_2{
 	padding: 10px 20px 20px 20px;
-	@media (min-width: 768px){
+	@include medias(Md){
 		padding: 20px 50px 20px 15px;
 		}
-	@media (min-width: 1024px){
+	@include medias(Lg){
 		padding: 25px 60px 25px 20px;
 		}
-	@media (min-width: 1200px){
+	@include medias(Xl){
 		padding: 30px 90px 30px 30px;
 		}
 	img{

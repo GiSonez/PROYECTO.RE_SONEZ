@@ -30,3 +30,80 @@ $colorBeige:#F4E390;
 $colorGris:#EFEAD1;
 $colorTienda:#F2EAC3;
 $black:#3F3C3C;
+
+
+//extends
+
+.btn_base{
+	background: linear-gradient(to top, $colorGris, white);
+	width: 80px;
+	height: 25px;
+	margin-right: 10px;
+	border: none;
+	color: $black;
+	font-size: 1.2rem;
+}
+
+
+
+//mixins
+
+@mixin textoTitulo($fontSize, $lineHeight, $wordSpacing, $letterSpacing, $color){
+	font-size: $fontSize;
+	line-height: $lineHeight;
+	word-spacing: $wordSpacing;
+	letter-spacing: $letterSpacing;
+	color:$color;
+}  
+	//@include textoTitulo(1.8rem, 0, 0.5rem, 0.5rem, white);
+
+
+@mixin d-flex($direction, $justify, $align){
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+}
+	//@include d-flex(column, center, center);
+
+
+@mixin medias($breakpoint){
+	@if $breakpoint == Sm{
+		@media (min-width: 300px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == Md{
+		@media (min-width: 768px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == Lg{
+		@media (min-width: 1024px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == Xl{
+		@media (min-width: 1200px){
+			@content;
+		}
+	}
+}
+
+//@include medias(Md){
+
+
+
+//maps
+
+$paletaBeige:(
+	"uno":#7a5c3c,
+	"dos": #b08e6b,
+	"tres": #e8c39e,
+	"cuatro": #d9b592,
+	"cinco": #f5e1ce,);
+
+//map-get($map:$paletaBeige,$key:"tres");

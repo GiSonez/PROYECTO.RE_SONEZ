@@ -4,22 +4,22 @@ footer{
 	height: auto;
 	margin-top: 40px;
 	padding: 40px 10px;
-	@media (min-width: 768px){
+	@include medias(Md){
 		margin-top: 50px;
 		padding-top: 30px;
 		}
-	@media (min-width: 1024px){
+	@include medias(Lg){
 		margin-top: 60px;
 		}
-	@media (min-width: 1200px){
+	@include medias(Xl){
 		margin-top: 80px;
 		}
 	h5{
 		font-size: $textSm;
-		@media (min-width: 768px){
+		@include medias(Md){
 			line-height: 2.4rem
 			}
-		@media (min-width: 1024px){
+		@include medias(Lg){
 			line-height: 2.6rem
 			}
 	}
@@ -27,7 +27,7 @@ footer{
 		width: 15px;
 		height: 15px;
 		margin-right: 5px;
-		@media (min-width: 768px){
+		@include medias(Md){
 			width: 20px;
 			height: 20px;
 			padding: 1px;
