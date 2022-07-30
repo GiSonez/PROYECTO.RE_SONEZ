@@ -8,3 +8,12 @@ Extends, mixins y maps los definí en el partial "_vars":
 	- para los breakpoint: y los llamé en todas las paginas.
 
 - Maps: mapa para paleta de colores beige (en "_vars"). Lo llamé en el scss de "_commons", en ".titulo"; también en el scss del index, en la tarjeta que lleva al pedido de presupuesto.
+
+
+
+Modificaciones para mejorar SEO:
+
+En todos los html agregué de forma personalizada:
+- meta description.
+- meta keywords (son iguales en todas las paginas).
+- title.

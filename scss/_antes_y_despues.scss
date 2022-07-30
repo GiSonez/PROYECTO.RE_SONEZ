@@ -30,20 +30,20 @@
 }
 
 .article_ayd{
-	padding: 20px 20px 10px 20px;
+	padding: 30px 30px 5px 30px;
 	@include medias(Md){
-		padding: 20px 15px 20px 50px;
+		padding: 20px 10px 20px 50px;
 		}
 	@include medias(Lg){
-		padding: 25px 20px 25px 60px;
+		padding: 25px 15px 25px 50px;
 		}
 	@include medias(Xl){
-		padding: 30px 30px 30px 90px;
+		padding: 30px 20px 30px 80px;
 		}
 	img{
 		border: none;
 		&:hover{
-			transform: scale(1.2);
+			transform: scale(1.1);
 			cursor: pointer;
 		}
 	}
@@ -51,20 +51,20 @@
 
 
 .article_ayd_2{
-	padding: 10px 20px 20px 20px;
+	padding: 10px 30px 5px 30px;
 	@include medias(Md){
-		padding: 20px 50px 20px 15px;
+		padding: 20px 50px 20px 10px;
 		}
 	@include medias(Lg){
-		padding: 25px 60px 25px 20px;
+		padding: 25px 50px 25px 15px;
 		}
 	@include medias(Xl){
-		padding: 30px 90px 30px 30px;
+		padding: 30px 80px 30px 20px;
 		}
 	img{
 		border: none;
 		&:hover{
-			transform: scale(1.2);
+			transform: scale(1.1);
 			cursor: pointer;
 		}
 	}
