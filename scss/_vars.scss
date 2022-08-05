@@ -68,8 +68,14 @@ $black:#3F3C3C;
 
 
 @mixin medias($breakpoint){
-	@if $breakpoint == Sm{
+	@if $breakpoint == Xs{
 		@media (min-width: 300px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == Sm{
+		@media (min-width: 400px) and (max-width: 767px){
 			@content;
 		}
 	}
@@ -104,6 +110,29 @@ $paletaBeige:(
 	"dos": #b08e6b,
 	"tres": #e8c39e,
 	"cuatro": #d9b592,
-	"cinco": #f5e1ce,);
+	"cinco": #f5e1ce,
+	"seis": #E2DEDA,);
 
 //map-get($map:$paletaBeige,$key:"tres");
+
+$paleta_1:(
+	"uno":#766049,
+	"dos": #BBA786,
+	"tres": #E2CEB3,
+	"cuatro": #FABD53,
+	"cinco": #BDB9AE,
+	"seis": #E3E3E3,);
+
+//map-get($map:$paleta_1,$key:"tres");
+
+
+$paleta_2:(
+	"uno":#7C875F,
+	"dos": #D9B777,
+	"tres": #E1C37A,
+	"cuatro": #F2DE79,
+	"cinco": #FCC743,
+	"seis": #F3F2D4,);
+
+//map-get($map:$paleta_2,$key:"tres");
+

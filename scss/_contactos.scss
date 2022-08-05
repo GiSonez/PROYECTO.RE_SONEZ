@@ -1,99 +1,122 @@
-
-.formulario{
-	border: solid 1px $colorBeige;
-	width: 80%;
-	padding: 20px;
-	margin: 5px;
+.forms{
+	margin: 40px 0;
+	padding: 0 20px; 
+	@include medias(Sm){
+		margin: 60px 0;
+		padding: 0 30px; 
+	}
+	@media (min-width: 576px) and (max-width: 767px){
+		margin: 70px 0;
+		padding: 0 70px;
+	}
 	@include medias(Md){
-		padding: 25px;
-		margin: 10px;
-		}
+		margin: 50px 0 70px 0;
+		padding: 0 40px;
+	}
 	@include medias(Lg){
-		padding: 30px;
-		margin: 15px;
-		}
+		margin: 60px 0 70px 0;
+		padding: 0 60px;
+	}
 	@include medias(Xl){
-		padding: 40px;
-		margin: 40px;
+		margin: 70px 0;
+		padding: 0 90px;
+	}
+
+	.formulario{
+		border: solid 1px $colorBeige;
+		padding: 20px;
+		margin-bottom: 20px;
+		@include medias(Sm){
+			padding: 40px;
+			margin-bottom: 30px;
 		}
-	h2{
-		text-align: $textJust;
-		font-size: $textMd;
-		line-height: 2rem;
+		@include medias(Md){
+			padding: 25px;
+			}
 		@include medias(Lg){
-			font-size: $textLg;
-			line-height: 3.2rem;
+			padding: 30px;
 			}
 		@include medias(Xl){
-			font-size: $textXl;
-			line-height: 3.6rem;
+			padding: 40px;
 			}
-	}
-	p, label{
-		text-align: $textJust;
-		font-size: $textSm;
-		line-height: 2rem;
-		@include medias(Lg){
+		h2{
+			text-align: $textJust;
 			font-size: $textMd;
 			line-height: 2rem;
-			}
-		@include medias(Xl){
-			font-size: $textLg;
-			line-height: 3.2rem;
-			}
-	}
-	fieldset{
-		margin-left: 15px;
-		@include medias(Lg){
-			margin-left: 25px;
-			}
-		@include medias(Xl){
-			margin-left: 35px;
-			}
-	}
-	.btn_form{
-		@extend .btn_base;
-		color: gray;
-		@include medias(Md){
-			margin-top: 5px;
-			width: 85px;
-			height: 30px;
-			}
-		@include medias(Lg){
-			margin-right: 30px;
-			margin-top: 10px;
-			width: 100px;
-			height: 35px;
+			@include medias(Lg){
+				font-size: $textLg;
+				line-height: 3.2rem;
+				}
+			@include medias(Xl){
+				font-size: $textXl;
+				line-height: 3.6rem;
+				}
+		}
+		p, label{
+			text-align: $textJust;
 			font-size: $textSm;
-			}
-		@include medias(Xl){	
-			margin-right: 45px;
-			margin-top: 15px;
-			}
-	}		
+			line-height: 2rem;
+			@include medias(Lg){
+				font-size: $textMd;
+				line-height: 2rem;
+				}
+			@include medias(Xl){
+				font-size: $textLg;
+				line-height: 3.2rem;
+				}
+		}
+		fieldset{
+			margin-left: 15px;
+			@include medias(Lg){
+				margin-left: 25px;
+				}
+			@include medias(Xl){
+				margin-left: 35px;
+				}
+		}
+		.btn_form{
+			@extend .btn_base;
+			color: gray;
+			@include medias(Md){
+				margin-top: 5px;
+				width: 85px;
+				height: 30px;
+				}
+			@include medias(Lg){
+				margin-right: 30px;
+				margin-top: 10px;
+				width: 100px;
+				height: 35px;
+				font-size: $textSm;
+				}
+			@include medias(Xl){	
+				margin-right: 45px;
+				margin-top: 15px;
+				}
+		}		
+	}
+
+	.btn_form_2{
+			@extend .btn_base;
+			color: gray;
+			margin-left: 15px;
+			@include medias(Md){
+				margin-top: 5px;
+				width: 85px;
+				height: 30px;
+				}
+			@include medias(Lg){
+				margin-left: 25px;
+				margin-top: 10px;
+				width: 100px;
+				height: 35px;
+				font-size: $textSm;
+				}
+			@include medias(Xl){
+				margin-left: 35px;
+				margin-top: 15px;
+				}
+		}		
+
 }
-
-.btn_form_2{
-		@extend .btn_base;
-		color: gray;
-		margin-left: 15px;
-		@include medias(Md){
-			margin-top: 5px;
-			width: 85px;
-			height: 30px;
-			}
-		@include medias(Lg){
-			margin-left: 25px;
-			margin-top: 10px;
-			width: 100px;
-			height: 35px;
-			font-size: $textSm;
-			}
-		@include medias(Xl){
-			margin-left: 35px;
-			margin-top: 15px;
-			}
-	}		
-
-
 

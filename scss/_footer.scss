@@ -1,20 +1,23 @@
 
 footer{
-	background-color: $colorGris;
+	background-color: map-get($map:$paleta_1,$key:"seis");
 	height: auto;
 	margin-top: 40px;
-	padding: 40px 10px;
+	padding: 40px 0 60px 30px;
 	@include medias(Md){
 		margin-top: 50px;
-		padding-top: 30px;
+		padding: 50px 0 60px 30px;
+		}
+	@media (min-width: 992px) and (max-width: 1023px){
+		padding: 50px 0 60px 40px;
 		}
 	@include medias(Lg){
 		margin-top: 60px;
 		}
 	@include medias(Xl){
-		margin-top: 80px;
+		margin-top: 100px;
 		}
-	h5{
+	h3{
 		font-size: $textSm;
 		@include medias(Md){
 			line-height: 2.4rem

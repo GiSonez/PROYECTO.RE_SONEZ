@@ -1,14 +1,17 @@
 
 .tienda{
-	padding: 10px 30px;
+	padding: 45px 45px 30px 45px;
+	@include medias(Sm){
+		padding: 45px 50px;
+		}
 	@include medias(Md){
-		padding: 20px 40px;
+		padding: 50px 90px;
 		}
 	@include medias(Lg){
-		padding: 20px 60px;
+		padding: 60px 120px 40px 120px;
 		}
 	@include medias(Xl){
-		padding: 30px 80px;
+		padding: 80px 160px 60px 160px;
 		}
 	p{
 		text-align: $textLeft;
@@ -47,7 +50,7 @@
 			cursor: pointer;
 		}
 	}
-	h5, p{
+	h2, p{
 		text-align: $textCenter;
 		font-size: $textSm;
 		color: #3F3C3C;
@@ -82,4 +85,76 @@
 		font-size: $textLg;
 		width: 120px;
 		}
+}
+
+.aside_tienda{
+	margin: 20px 0;
+	padding:10px 0;
+	@include medias(Md){
+		margin: 30px 0;
+		padding:10px;
+	}
+	@include medias(Lg){
+		margin: 40px 0;
+	}
+	@include medias(Xl){
+		margin: 50px 0;
+		padding: 0 40px;
+	}
+	img{
+		width: 60px;
+		height: 60px;
+		border-right:solid 1px map-get($map:$paletaBeige,$key:"uno");
+		margin: 10px;
+		padding: 10px;
+		@include medias(Md){
+			width: 70px;
+			height: 70px;
+			margin: 15px;
+			padding: 15px;
+		}
+		@include medias(Lg){
+			width: 80px;
+			height: 80px;
+			margin: 15px;
+			padding: 15px;
+		}
+	}
+	h2{
+		color: map-get($map:$paletaBeige,$key:"uno");
+		font-size: $textSm;
+		font-weight: 600;
+		padding-left: 5px;
+		@include medias(Md){
+			padding-left: 30px;
+		}
+		@include medias(Lg){
+			padding-left: 25px;
+			margin-top: 15px;
+		}
+		@include medias(Xl){
+			padding-left: 15px;
+			margin-top: 15px;
+		}
+	}
+	p{
+		font-size: 1rem;
+		padding-left: 5px;
+		@include medias(Md){
+			padding-left: 30px;
+		}
+		@include medias(Lg){
+			padding-left: 25px;
+			font-size: $textSm;
+		}
+		@include medias(Xl){
+			padding-left: 15px;
+			margin-top: 15px;
+		}
+	}
+}
+
+.aside_tienda__card{
+	margin: 10px 0;
+	border: none;
 }

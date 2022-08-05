@@ -13,33 +13,50 @@ html{
 //barra titular en beige
 
 .titulo{
-	background-color: map-get($map:$paletaBeige,$key:"cuatro");
 	height: 50px;
 	margin-top: 30px;
-	margin-bottom: 50px;
+	margin-left: 45px;
+	border-bottom: solid 1.8px black;
+	border-left: solid 1.8px black;
 	@include medias(Md){
 		height: 60px;
+		margin-left: 225px;
+		border-bottom: solid 1.9px black;
+		border-left: solid 1.9px black;
 		}
 	@include medias(Lg){
 		height: 70px;
+		margin-left: 350px;
+		border-bottom: solid 2px black;
+		border-left: solid 2px black;
 		}
-
+	@include medias(Xl){	
+		height: 80px;
+		margin-left: 390px;	
+		border-bottom: solid 2.5px black;
+		border-left: solid 2.5px black;
+	}
 
 	h2,h1 {
-		@include textoTitulo(1.8rem, 0, 0.5rem, 0.5rem, white);
+		@include textoTitulo(1.4rem, 0, 0.4rem, 0.4rem, $black);
 		padding-top: 25px;
-		text-align: $textCenter;
+		padding-left: 20px;
+		text-align: $textLeft;
+		@include medias(Sm){
+			@include textoTitulo(1.6rem, 0, 0.6rem, 0.6rem, $black);
+			padding-top: 30px;
+			}
 		@include medias(Md){
-			@include textoTitulo(2.1rem, 0, 0.6rem, 0.6rem, white);
+			@include textoTitulo(1.9rem, 0.9rem, 0.9rem, 0.9rem, $black);
 			padding-top: 30px;
 			}
 		@include medias(Lg){
-			@include textoTitulo(2.3rem, 0, 0.8rem, 0.8rem, white);
-			padding-top: 35px;
+			@include textoTitulo(2rem, 1rem, 1rem, 1rem, $black);
+			padding-top: 40px;
 			}
 		@include medias(Xl){
-			@include textoTitulo(2.5rem, 0, 1rem, 1rem, white);
-			padding-top: 35px;
+			@include textoTitulo(2.5rem, 1.2rem, 1.2rem, 1.2rem, $black);
+			padding-left: 50px;
 			}
 	}
 }

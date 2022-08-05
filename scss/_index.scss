@@ -2,16 +2,18 @@
 .main_index{
 	@include d-flex(column, center, center);
 	background-color: white;
-	margin: 5px 0 40px 0;
+	margin: 5px 2px 40px 2px;
 	@include medias(Md){
 		@include d-flex(row-reverse, center, center);
-		margin-bottom: 5px;	
+		margin: 0 2px 0 2px;
+		border-top: solid 1.9px black;
 		}
 	@include medias(Lg){
-		margin-bottom: 20px;
+		border-top: solid 2px black;
 		}
 	@include medias(Xl){
-		margin-bottom: 30px;
+		margin-bottom: 50px;
+		border-top: solid 2.5px black;
 		}
 }
 
@@ -19,24 +21,31 @@
 		width: 400px;
 		height: auto;
 		margin-bottom: 50px;
+		@include medias(Sm){
+		width: 600px;
+		}
 		@include medias(Md){
-			width: 1600px;
-			height: auto;
+			width: 2000px;
+			height: 345px;
+			margin-bottom: 20px;
 			}
-		@include medias(Xl){
+		@include medias(Lg){
 			width: 1700px;
+			height: auto;
+		}
+		@include medias(Xl){
+			width: 2400px;
 			}
 	}
 
 	.main_index__text{
 		margin: 0 40px;
 		@include medias(Md){
-			margin-bottom: 40px;
-			margin-right: 20px;
+			margin: 5px 20px 10px 40px;	
 			}
 		@include medias(Lg){
 			margin: 0 20px 0 55px;
-			padding-bottom: 40px;
+			padding-bottom: 10px;
 			}
 		@include medias(Xl){
 			margin: 0 20px 0 80px;
@@ -46,6 +55,10 @@
 			font-size: $textSm;
 			font-weight: $textBold;
 			line-height: 2.4rem;
+			@include medias(Md){
+				font-size: $textSm;
+				line-height: 2.4rem;
+			}
 			@include medias(Lg){
 				font-size: $textLg;
 				line-height: 2.8rem;
@@ -59,6 +72,10 @@
 			text-align: $textLeft;
 			font-size: $textSm;
 			line-height: 2.4rem;
+			@include medias(Md){
+				font-size: $textSm;
+				line-height: 2.4rem;
+				}
 			@include medias(Lg){
 				font-size: $textLg;
 				line-height: 2.8rem;
@@ -73,17 +90,21 @@
 
 .aside_index{
 	@include d-flex(column, center, center);
+	padding-top: 40px;
+	@include medias(Sm){
+		padding-top: 50px
+	}
 	@include medias(Md){
 		@include d-flex(row, space-around, stretch);
-		padding-top: 20px;
+		padding-top: 50px;
 		padding-bottom: 20px;
 		}
 	@include medias(Lg){
-		padding-top: 20px;
+		padding-top: 60px;
 		padding-bottom: 20px;
 		}
 	@include medias(Xl){
-		padding-top: 30px;
+		padding-top: 100px;
 		padding-bottom: 30px;
 		}
 	h3{
@@ -121,6 +142,9 @@
 	.card{
 		width: 250px;
 		margin-bottom: 40px;
+		@include medias(Sm){
+			width: 300px;
+		}
 		@include medias(Md){
 			width: 200px;
 			}
@@ -133,75 +157,73 @@
 	}
 }
 
-
-.card_presup{
-	background-color: map-get($map:$paletaBeige,$key:"cuatro");
-	margin-bottom: 40px;
-	width: 240px;
-	height: 120px;
+.adorno{
 	border: none;
-	text-align: $textCenter;
-	@include medias(Md){
-		width: 300px;
-		height: 150px;
-		margin-bottom: 50px;
-		padding-top: 20px;
-		}
-	@include medias(Lg){
-		width: 360px;
-		height: 180px;
-		margin-bottom: 60px;
-		padding-top: 30px;
-		}
-	@include medias(Xl){
-		width: 420px;
-		height: 210px;
-		margin-bottom: 70px;
-		padding-top: 40px;
-		}
-	p{
-		color: white;
-		font-size: 1.2rem;
-		font-weight: 400;
-		line-height: 2.6rem;
-		padding: 10px 0;
-		@include medias(Md){
-			font-size: $textSm;
-			line-height: 3rem;
-			padding: 0 0 10px 0;
-			}
-		@include medias(Lg){
-			font-size: $textMd;
-			line-height: 3.2rem;
-			padding: 0 0 10px 0;
-			}
-		@include medias(Xl){
-			font-size: $textLg;
-			line-height: 3.6rem;
-			}
+	margin-bottom: 40px;
+}
+
+
+.link_presup{
+	border: solid 1px black;
+	width: 70%;
+	margin-bottom: 80px;
+	@media (min-width: 576px) and (max-width: 767px){
+	width: 50%;
 	}
-	a{
-		text-decoration: none;
-		color: white;
-		font-size:1.2rem;
-		padding: 10px;
-		border: solid white 1px;
+	@include medias(Md){
+		width: 50%;
+	}
+	@include medias(Lg){
+		width: 40%;
+	}
+	@include medias(Xl){
+		width: 35%;
+	}
+	p{
+		@include textoTitulo(1.2rem, 4rem, 0.1rem, 0.1rem, $black);
+		text-align: $textCenter;
 		@include medias(Md){
-			font-size: $textSm;
-			padding: 15px;
-			}
+			@include textoTitulo($textSm, 4rem, 0.2rem, 0.2rem, $black);
+		}
 		@include medias(Lg){
-			font-size: $textMd;
-			line-height: 3.2rem;
-			border: solid white 1.5px;
-			}
+			@include textoTitulo($textMd, 5rem, 0.3rem, 0.3rem, $black);
+		}
 		@include medias(Xl){
-			font-size: $textLg;
-			line-height: 3.8rem;
+			@include textoTitulo($textLg, 6rem, 0.3rem, 0.3rem, $black);
+		}
+	}
+
+	.link{
+		border: solid 1px black;
+		text-align: $textCenter;
+		margin-bottom: 10px;
+		@include medias(Md){
+			margin-bottom: 15px;
+		}
+		@include medias(Lg){
+			margin-bottom: 20px;
+		}
+		@include medias(Xl){
+			margin-bottom: 25px;
+		}
+		a{
+			@include textoTitulo(1.2rem, 2rem, 0.1rem, 0.1rem, $black);
+			text-decoration: none;
+			&:hover{
+				cursor: pointer;
 			}
+			@include medias(Md){
+			@include textoTitulo(1.2rem, 4rem, 0.2rem, 0.2rem, $black);
+			}
+			@include medias(Lg){
+			@include textoTitulo($textSm, 5rem, 0.3rem, 0.3rem, $black);
+			}
+			@include medias(Xl){
+			@include textoTitulo($textMd, 6rem, 0.3rem, 0.3rem, $black);
+			}
+		}
 	}
 }
 
-	
 
-	
+

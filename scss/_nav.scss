@@ -1,7 +1,11 @@
 
 nav{
 	background-color: white;
-	margin: 10px 10px 10px 30px;
+	margin: 10px 20px 10px 40px;
+	font-size: 1.2rem;
+	@include medias(Sm){
+		margin: 15px 20px 20px 35px;
+	}
 	@include medias(Md){
 		margin: 20px 10px 20px 30px;
 		font-size: $textMd;
@@ -10,14 +14,24 @@ nav{
 		margin: 20px 15px 20px 50px;
 		}
 	@include medias(Xl){
-		margin: 25px 30px 25px 75px;
+		margin: 30px 50px 30px 75px;	
 		font-size: $textLg;
 		}
 	ul{
+		border-left: solid 1px black;
+		@include medias(Md){
+			border-left: solid 1.9px black;
+		}
+		@include medias(Lg){
+			border-left: solid 2px black;
+		}
+		@include medias(Xl){
+			border-left: solid 2.5px black;
+		}
 		li{
 			a{
 				&:hover{
-					color: $textBold;
+					color: $black;
 				}
 			}
 
@@ -36,5 +50,6 @@ nav{
 		}
 	@include medias(Xl){
 		width: 140px;
+		
 		}
 	}
