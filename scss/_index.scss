@@ -1,19 +1,20 @@
 
 .main_index{
 	@include d-flex(column, center, center);
-	background-color: white;
-	margin: 5px 2px 40px 2px;
+	margin: 5px 2px 30px 2px;
 	@include medias(Md){
 		@include d-flex(row-reverse, center, center);
-		margin: 0 2px 0 2px;
-		border-top: solid 1.9px black;
+		margin: 0 10px 0 40px;
+		border-top: solid 5px map-get($map:$paleta,$key:"diez");
 		}
 	@include medias(Lg){
-		border-top: solid 2px black;
+		border-top: solid 5.5px map-get($map:$paleta,$key:"diez");
 		}
 	@include medias(Xl){
-		margin-bottom: 50px;
-		border-top: solid 2.5px black;
+		margin-right: 20px;
+		margin-left: 80px;
+		margin-bottom: 40px;
+		border-top: solid 8px map-get($map:$paleta,$key:"diez");
 		}
 }
 
@@ -21,46 +22,50 @@
 		width: 400px;
 		height: auto;
 		margin-bottom: 50px;
+		@include medias(Xs){
+		width: 560px;
+		height: 260px;
+		}
 		@include medias(Sm){
-		width: 600px;
+		width: 760px;
+		height: 340px;
 		}
 		@include medias(Md){
-			width: 2000px;
-			height: 345px;
-			margin-bottom: 20px;
+			width: 1500px;
+			height: auto;	
 			}
 		@include medias(Lg){
 			width: 1700px;
 			height: auto;
 		}
 		@include medias(Xl){
-			width: 2400px;
+			width: 2200px;
 			}
 	}
 
 	.main_index__text{
 		margin: 0 40px;
 		@include medias(Md){
-			margin: 5px 20px 10px 40px;	
+			margin: 0 20px 10px 5px;
+			padding-bottom: 15px;	
 			}
 		@include medias(Lg){
-			margin: 0 20px 0 55px;
-			padding-bottom: 10px;
+			margin: 0 30px 0 30px;
+			padding-bottom: 20px;
 			}
 		@include medias(Xl){
-			margin: 0 20px 0 80px;
+			margin: 0 40px 0 40px;
 			}
 		h1{
 			text-align: $textLeft;
 			font-size: $textSm;
 			font-weight: $textBold;
 			line-height: 2.4rem;
-			@include medias(Md){
+			@media (min-width: 768px) and (max-width: 991px){
 				font-size: $textSm;
-				line-height: 2.4rem;
 			}
 			@include medias(Lg){
-				font-size: $textLg;
+				font-size: $textMd;
 				line-height: 2.8rem;
 				}
 			@include medias(Xl){
@@ -72,16 +77,15 @@
 			text-align: $textLeft;
 			font-size: $textSm;
 			line-height: 2.4rem;
-			@include medias(Md){
-				font-size: $textSm;
-				line-height: 2.4rem;
-				}
+			@media (min-width: 768px) and (max-width: 991px){
+				font-size: 1.2rem;
+			}
 			@include medias(Lg){
-				font-size: $textLg;
+				font-size: $textSm;
 				line-height: 2.8rem;
 				}
 			@include medias(Xl){
-				font-size: $textXl;
+				font-size: $textLg;
 				line-height: 3rem;
 				}
 		}
@@ -91,16 +95,19 @@
 .aside_index{
 	@include d-flex(column, center, center);
 	padding-top: 40px;
-	@include medias(Sm){
+	@include medias(Xs){
 		padding-top: 50px
+	}
+	@include medias(Sm){
+		padding-top: 60px
 	}
 	@include medias(Md){
 		@include d-flex(row, space-around, stretch);
-		padding-top: 50px;
+		padding-top: 60px;
 		padding-bottom: 20px;
 		}
 	@include medias(Lg){
-		padding-top: 60px;
+		padding-top: 70px;
 		padding-bottom: 20px;
 		}
 	@include medias(Xl){
@@ -140,13 +147,18 @@
 			}
 	}
 	.card{
+		border: none;
 		width: 250px;
 		margin-bottom: 40px;
+		box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+		@include medias(Xs){
+			width: 275px;
+		}
 		@include medias(Sm){
 			width: 300px;
 		}
 		@include medias(Md){
-			width: 200px;
+			width: 220px;
 			}
 		@include medias(Lg){
 			width: 260px;
@@ -167,8 +179,9 @@
 	border: solid 1px black;
 	width: 70%;
 	margin-bottom: 80px;
-	@media (min-width: 576px) and (max-width: 767px){
-	width: 50%;
+	box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+	@include medias(Sm){
+		width: 60%;
 	}
 	@include medias(Md){
 		width: 50%;
@@ -180,8 +193,14 @@
 		width: 35%;
 	}
 	p{
-		@include textoTitulo(1.2rem, 4rem, 0.1rem, 0.1rem, $black);
+		@include textoTitulo(1rem, 4rem, 0.1rem, 0.1rem, $black);
 		text-align: $textCenter;
+		@include medias(Xs){
+			@include textoTitulo(1.1rem, 3rem, 0.2rem, 0.2rem, $black);
+		}
+		@include medias(Sm){
+			@include textoTitulo($textSm, 4rem, 0.2rem, 0.2rem, $black);
+		}
 		@include medias(Md){
 			@include textoTitulo($textSm, 4rem, 0.2rem, 0.2rem, $black);
 		}
@@ -196,7 +215,8 @@
 	.link{
 		border: solid 1px black;
 		text-align: $textCenter;
-		margin-bottom: 10px;
+		margin-bottom: 5px;
+		box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 		@include medias(Md){
 			margin-bottom: 15px;
 		}
@@ -207,10 +227,13 @@
 			margin-bottom: 25px;
 		}
 		a{
-			@include textoTitulo(1.2rem, 2rem, 0.1rem, 0.1rem, $black);
+			@include textoTitulo(1rem, 2rem, 0.1rem, 0.1rem, $black);
 			text-decoration: none;
 			&:hover{
 				cursor: pointer;
+			}
+			@include medias(Xs){
+			@include textoTitulo(1.1rem, 3rem, 0.2rem, 0.2rem, $black);
 			}
 			@include medias(Md){
 			@include textoTitulo(1.2rem, 4rem, 0.2rem, 0.2rem, $black);

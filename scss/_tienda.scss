@@ -1,6 +1,9 @@
 
 .tienda{
-	padding: 45px 45px 30px 45px;
+	padding: 30px 45px 30px 45px;
+	@include medias(Xs){
+		padding: 40px 50px;
+		}
 	@include medias(Sm){
 		padding: 45px 50px;
 		}
@@ -46,7 +49,7 @@
 			border: 2px;
 			}
 		&:hover{
-			transform: scale(1.3);
+			transform: scale(1.2);
 			cursor: pointer;
 		}
 	}

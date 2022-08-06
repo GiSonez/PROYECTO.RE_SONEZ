@@ -1,6 +1,9 @@
 
 .main_ayd_text{
-	margin: 40px 10px 40px 45px;
+	margin: 30px 10px 20px 45px;
+	@include medias(Xs){
+		margin: 40px 50px 30px 45px;
+		}
 	@include medias(Sm){
 		margin: 50px 50px 40px 45px;
 		}
@@ -34,9 +37,12 @@
 
 .article_ayd{
 	padding: 20px 50px;
-	@media (min-width: 576px) and (max-width: 767px){
+	@include medias(Xs){
+		padding: 25px 70px;
+		}
+	@include medias(Sm){
 		padding: 30px 120px;
-	}
+		}
 	@include medias(Md){
 		padding: 20px 15px 20px 100px;
 		}
@@ -54,9 +60,12 @@
 
 .article_ayd_2{
 	padding: 5px 50px;
-	@media (min-width: 576px) and (max-width: 767px){
+	@include medias(Xs){
+		padding: 10px 70px;
+		}
+	@include medias(Sm){
 		padding: 10px 120px;
-	}
+		}
 	@include medias(Md){
 		padding: 20px 100px 10px 15px;
 		}

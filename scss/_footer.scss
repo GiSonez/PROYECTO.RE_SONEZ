@@ -1,15 +1,15 @@
 
 footer{
-	background-color: map-get($map:$paleta_1,$key:"seis");
+	background-color: map-get($map:$paleta,$key:"catorce");
 	height: auto;
 	margin-top: 40px;
-	padding: 40px 0 60px 30px;
+	padding: 40px 0 0 30px;
 	@include medias(Md){
 		margin-top: 50px;
-		padding: 50px 0 60px 30px;
+		padding: 50px 0 0 30px;
 		}
 	@media (min-width: 992px) and (max-width: 1023px){
-		padding: 50px 0 60px 40px;
+		padding: 50px 0 0 40px;
 		}
 	@include medias(Lg){
 		margin-top: 60px;
@@ -18,12 +18,15 @@ footer{
 		margin-top: 100px;
 		}
 	h3{
-		font-size: $textSm;
+		font-size: 1.2rem;
 		@include medias(Md){
 			line-height: 2.4rem
 			}
 		@include medias(Lg){
 			line-height: 2.6rem
+			}
+		@include medias(Xl){
+			font-size: $textSm;
 			}
 	}
 	.pie_icon{
@@ -37,13 +40,40 @@ footer{
 			}
 	}
 	p{
-		font-size: $textSm;
+		font-size: 1.2rem;
+		@include medias(Xl){
+			font-size: $textSm;
+			}
 	}
 	a{
 		text-decoration: none;
 		color: $black;
-		font-size: $textSm;
+		font-size: 1.2rem;
+		@include medias(Xl){
+			font-size: $textSm;
+			}
 	}
 }	
 
-	
+.copyright{
+	margin-top: 30px;
+	@include medias(Md){
+		margin-top: 50px;
+	}
+	@include medias(Lg){
+		margin-top: 70px;
+	}
+	@include medias(Xl){
+		margin-top: 90px;
+	}
+	p{
+		font-size: 1rem;
+		text-align: $textLeft;
+		@include medias(Md){
+		font-size: 1.1rem;
+		}
+		@include medias(Xl){
+		font-size: 1.2rem;
+		}
+	}
+}	

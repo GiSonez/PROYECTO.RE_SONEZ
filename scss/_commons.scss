@@ -10,53 +10,69 @@ html{
 	}
 
 
-//barra titular en beige
+//barra titular 
 
 .titulo{
 	height: 50px;
-	margin-top: 30px;
-	margin-left: 45px;
-	border-bottom: solid 1.8px black;
-	border-left: solid 1.8px black;
+	margin-left: 70px;
+	border-radius: 45px 0 45px 0;
+	border-bottom: solid 4.5px map-get($map:$paleta,$key:"diez");
+	border-left: solid 4.5px map-get($map:$paleta,$key:"diez");
+	@include medias(Xs){
+		margin-left: 100px;
+		margin-top: 30px;
+	}
+	@include medias(Sm){
+		margin-left: 130px;
+		margin-top: 35px;
+	}
 	@include medias(Md){
 		height: 60px;
-		margin-left: 225px;
-		border-bottom: solid 1.9px black;
-		border-left: solid 1.9px black;
+		margin-left: 200px;
+		border-bottom: solid 5px map-get($map:$paleta,$key:"diez");
+		border-left: solid 5px map-get($map:$paleta,$key:"diez");
 		}
 	@include medias(Lg){
 		height: 70px;
 		margin-left: 350px;
-		border-bottom: solid 2px black;
-		border-left: solid 2px black;
+		border-bottom: solid 5.5px map-get($map:$paleta,$key:"diez");
+		border-left: solid 5.5px map-get($map:$paleta,$key:"diez");
 		}
 	@include medias(Xl){	
-		height: 80px;
-		margin-left: 390px;	
-		border-bottom: solid 2.5px black;
-		border-left: solid 2.5px black;
+		height: 80px;	
+		margin-left: 390px;
+		border-bottom: solid 8px map-get($map:$paleta,$key:"diez");
+		border-left: solid 8px map-get($map:$paleta,$key:"diez");
 	}
 
 	h2,h1 {
-		@include textoTitulo(1.4rem, 0, 0.4rem, 0.4rem, $black);
+		@include textoTitulo(1.3rem, 0, 0.4rem, 0.4rem, $black);
 		padding-top: 25px;
-		padding-left: 20px;
+		padding-left: 30px;
 		text-align: $textLeft;
+		@include medias(Xs){
+			@include textoTitulo(1.4rem, 0, 0.5rem, 0.5rem, $black);
+			padding-top: 25px;
+			padding-left: 35px;
+			}
 		@include medias(Sm){
-			@include textoTitulo(1.6rem, 0, 0.6rem, 0.6rem, $black);
-			padding-top: 30px;
+			@include textoTitulo(1.5rem, 0, 0.6rem, 0.6rem, $black);
+			padding-top: 25px;
+			padding-left: 40px;
 			}
 		@include medias(Md){
-			@include textoTitulo(1.9rem, 0.9rem, 0.9rem, 0.9rem, $black);
-			padding-top: 30px;
+			@include textoTitulo(1.7rem, 0, 0.8rem, 0.8rem, $black);
+			padding-top: 35px;
+			padding-left: 40px;
 			}
 		@include medias(Lg){
-			@include textoTitulo(2rem, 1rem, 1rem, 1rem, $black);
+			@include textoTitulo(1.9rem, 0, 1rem, 1rem, $black);
 			padding-top: 40px;
+			padding-left: 50px;
 			}
 		@include medias(Xl){
-			@include textoTitulo(2.5rem, 1.2rem, 1.2rem, 1.2rem, $black);
-			padding-left: 50px;
+			@include textoTitulo(2.2rem, 0, 1.2rem, 1.2rem, $black);
+			padding-left: 60px;
 			}
 	}
 }

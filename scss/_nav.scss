@@ -1,32 +1,34 @@
 
 nav{
-	background-color: white;
-	margin: 10px 20px 10px 40px;
+	margin: 10px 20px 10px 20px;
 	font-size: 1.2rem;
+	@include medias(Xs){
+		margin: 15px 40px 15px 30px;
+	}
 	@include medias(Sm){
-		margin: 15px 20px 20px 35px;
+		margin: 20px 40px 20px 40px;
 	}
 	@include medias(Md){
-		margin: 20px 10px 20px 30px;
-		font-size: $textMd;
+		margin: 20px 20px 25px 30px;
+		font-size: $textSm;
 		}
 	@include medias(Lg){
-		margin: 20px 15px 20px 50px;
+		margin: 25px 30px 25px 50px;
 		}
 	@include medias(Xl){
 		margin: 30px 50px 30px 75px;	
 		font-size: $textLg;
 		}
 	ul{
-		border-left: solid 1px black;
+		border-left: solid 2px map-get($map:$paleta,$key:"diez");
 		@include medias(Md){
-			border-left: solid 1.9px black;
+			border-left: solid 2.5px map-get($map:$paleta,$key:"diez");
 		}
 		@include medias(Lg){
-			border-left: solid 2px black;
+			border-left: solid 2.8px map-get($map:$paleta,$key:"diez");
 		}
 		@include medias(Xl){
-			border-left: solid 2.5px black;
+			border-left: solid 3px map-get($map:$paleta,$key:"diez");
 		}
 		li{
 			a{
@@ -41,9 +43,15 @@ nav{
 
 
 .nav_logo{
-	width: 100px;
+	width: 80px;
+	@include medias(Xs){
+		width: 90px;
+		}
+	@include medias(Sm){
+		width: 100px;
+		}
 	@include medias(Md){
-		width: 105px;
+		width: 110px;
 		}
 	@include medias(Lg){
 		width: 120px;

@@ -69,13 +69,13 @@ $black:#3F3C3C;
 
 @mixin medias($breakpoint){
 	@if $breakpoint == Xs{
-		@media (min-width: 300px){
+		@media (min-width: 400px){
 			@content;
 		}
 	}
 
 	@if $breakpoint == Sm{
-		@media (min-width: 400px) and (max-width: 767px){
+		@media (min-width: 576px){
 			@content;
 		}
 	}
@@ -87,13 +87,19 @@ $black:#3F3C3C;
 	}
 
 	@if $breakpoint == Lg{
-		@media (min-width: 1024px){
+		@media (min-width: 992px){
 			@content;
 		}
 	}
 
 	@if $breakpoint == Xl{
 		@media (min-width: 1200px){
+			@content;
+		}
+	}
+
+	@if $breakpoint == Xxl{
+		@media (min-width: 1400px){
 			@content;
 		}
 	}
@@ -104,6 +110,27 @@ $black:#3F3C3C;
 
 
 //maps
+
+$paleta:(
+	"cero": #7a5c3c,
+	"uno": #b08e6b,
+	"dos": #d9b592,
+	"tres": #766049,
+	"cuatro": #BBA786,
+	"cinco": #E2CEB3,
+	"seis": #BDB9AE,
+	"siete": #E3E3E3,
+	"ocho": #7C875F,
+	"nueve": #D9B777,
+	"diez": #E2C16F,
+	"once": #F2DE79,
+	"doce": #FCC743,
+	"trece": #E2DEDA,
+	"catorce": #F3F2D4,
+	"quince": #6D6B6B);
+
+
+//map-get($map:$paleta,$key:"tres");
 
 $paletaBeige:(
 	"uno":#7a5c3c,

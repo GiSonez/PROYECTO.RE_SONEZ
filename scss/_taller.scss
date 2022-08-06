@@ -1,15 +1,21 @@
 
 .text_taller{
 	border: none;
-	padding: 40px;
+	padding: 30px 30px 20px 30px;
+	@include medias(Xs){
+		padding: 40px 30px 20px 30px;
+		}
+	@include medias(Sm){
+		padding: 60px 40px 30px 40px;
+		}
 	@include medias(Md){
-		padding: 60px 40px;
+		padding: 60px 40px 40px 40px;
 		}
 	@include medias(Lg){
-		padding: 70px 5px 30px 50px;
+		padding: 60px 5px 30px 50px;
 		}
 	@include medias(Xl){
-		padding: 90px 20px 40px 75px;
+		padding: 80px 20px 40px 75px;
 		}
 	p{
 		@include textoTitulo($textSm, 2.6rem, 0, 0, $black);
@@ -32,38 +38,36 @@
 	}
 }
 
-.img_taller{
+.adorno_taller{
 	border: none;
-	padding: 0 60px;
-	margin-bottom: 40px;
-	@include medias(Sm){
-		padding: 0 80px;
-	}
-	@include medias(Md){
-		padding: 0 120px;
-		}
-	@media (min-width: 820px) and (max-width: 991px){
-		padding: 0 160px;
-	}
-	@media (min-width: 992px) and (max-width: 1023px){
-		padding: 70px 5px 0 5px;
-		.marco{
-			border-top: solid 1.5px black;
-			border-right: solid 1.5px black;
-			padding: 25px;
-		}
-	}
+	margin-bottom: 30px;
 	@include medias(Lg){
-		padding: 80px 10px 0 10px;
-		.marco{
-			border-top: solid 2px black;
-			border-right: solid 2px black;
-			padding: 30px;
-		}
+		padding-top: 70px;
 	}
 	@include medias(Xl){
-		padding: 100px 20px 0 20px;
+		padding-top: 80px;
+	}
+}
+
+
+.img_taller{
+	border: none;
+	padding: 30px 60px 0 60px;
+	@include medias(Xs){
+		padding: 30px 70px 0 70px;
+	}
+	@include medias(Sm){
+		padding: 40px 80px 0 80px;
+	}
+	@include medias(Md){
+		padding: 50px 120px 0 120px;
 		}
+	@include medias(Lg){
+		padding: 40px 10px 0 10px;
+	}
+	@include medias(Xl){
+		padding: 50px 20px 0 20px;
+	}
 	
 }
 
