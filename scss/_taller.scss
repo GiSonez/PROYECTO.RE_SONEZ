@@ -1,9 +1,9 @@
 
 .text_taller{
 	border: none;
-	padding: 30px 30px 20px 30px;
+	padding: 40px 30px 20px 30px;
 	@include medias(Xs){
-		padding: 40px 30px 20px 30px;
+		padding: 50px 30px 20px 30px;
 		}
 	@include medias(Sm){
 		padding: 60px 40px 30px 40px;

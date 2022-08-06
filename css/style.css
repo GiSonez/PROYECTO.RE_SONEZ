@@ -10,33 +10,33 @@
 }
 
 nav {
-  margin: 10px 20px 10px 20px;
+  margin: 10px 20px 20px 20px;
   font-size: 1.2rem;
 }
 @media (min-width: 400px) {
   nav {
-    margin: 15px 40px 15px 30px;
+    margin: 15px 40px 25px 30px;
   }
 }
 @media (min-width: 576px) {
   nav {
-    margin: 20px 40px 20px 40px;
+    margin: 20px 40px 30px 40px;
   }
 }
 @media (min-width: 768px) {
   nav {
-    margin: 20px 20px 25px 30px;
+    margin: 20px 20px 30px 30px;
     font-size: 1.3rem;
   }
 }
 @media (min-width: 992px) {
   nav {
-    margin: 25px 30px 25px 50px;
+    margin: 25px 30px 30px 50px;
   }
 }
 @media (min-width: 1200px) {
   nav {
-    margin: 30px 50px 30px 75px;
+    margin: 30px 50px 35px 75px;
     font-size: 1.5rem;
   }
 }
@@ -63,16 +63,16 @@ nav ul li a:hover {
 }
 
 .nav_logo {
-  width: 80px;
+  width: 90px;
 }
 @media (min-width: 400px) {
   .nav_logo {
-    width: 90px;
+    width: 100px;
   }
 }
 @media (min-width: 576px) {
   .nav_logo {
-    width: 100px;
+    width: 105px;
   }
 }
 @media (min-width: 768px) {
@@ -103,21 +103,22 @@ html {
 
 .titulo {
   height: 50px;
-  margin-left: 70px;
+  margin-top: 30px;
+  margin-left: 100px;
   border-radius: 45px 0 45px 0;
   border-bottom: solid 4.5px #E2C16F;
   border-left: solid 4.5px #E2C16F;
 }
 @media (min-width: 400px) {
   .titulo {
-    margin-left: 100px;
-    margin-top: 30px;
+    margin-left: 120px;
+    margin-top: 40px;
   }
 }
 @media (min-width: 576px) {
   .titulo {
-    margin-left: 130px;
-    margin-top: 35px;
+    margin-left: 160px;
+    margin-top: 50px;
   }
 }
 @media (min-width: 768px) {
@@ -301,7 +302,7 @@ html {
   font-weight: 600;
   line-height: 2.4rem;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   .main_index__text h1 {
     font-size: 1.3rem;
   }
@@ -323,7 +324,7 @@ html {
   font-size: 1.3rem;
   line-height: 2.4rem;
 }
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) {
   .main_index__text p {
     font-size: 1.2rem;
   }
@@ -346,7 +347,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 @media (min-width: 400px) {
   .aside_index {
@@ -462,7 +463,8 @@ html {
 }
 
 .link_presup {
-  border: solid 1px black;
+  background-color: #F8F5F5;
+  border: none;
   width: 70%;
   margin-bottom: 80px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
@@ -541,7 +543,9 @@ html {
   }
 }
 .link_presup .link {
-  border: solid 1px black;
+  background: linear-gradient(to top, #EFEAD1, white);
+  border: none;
+  border-radius: 3px;
   text-align: center;
   margin-bottom: 5px;
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
@@ -611,11 +615,11 @@ html {
 
 .text_taller {
   border: none;
-  padding: 30px 30px 20px 30px;
+  padding: 40px 30px 20px 30px;
 }
 @media (min-width: 400px) {
   .text_taller {
-    padding: 40px 30px 20px 30px;
+    padding: 50px 30px 20px 30px;
   }
 }
 @media (min-width: 576px) {
@@ -716,16 +720,16 @@ html {
 }
 
 .main_ayd_text {
-  margin: 30px 10px 20px 45px;
+  margin: 40px 10px 20px 45px;
 }
 @media (min-width: 400px) {
   .main_ayd_text {
-    margin: 40px 50px 30px 45px;
+    margin: 50px 50px 30px 45px;
   }
 }
 @media (min-width: 576px) {
   .main_ayd_text {
-    margin: 50px 50px 40px 45px;
+    margin: 60px 50px 40px 45px;
   }
 }
 @media (min-width: 768px) {
@@ -832,7 +836,7 @@ html {
 }
 
 .forms {
-  margin: 30px 0;
+  margin: 40px 0;
   padding: 0 20px;
 }
 @media (min-width: 400px) {
@@ -849,7 +853,7 @@ html {
 }
 @media (min-width: 768px) {
   .forms {
-    margin: 40px 0 60px 0;
+    margin: 50px 0 60px 0;
     padding: 0 40px;
   }
 }
@@ -866,7 +870,7 @@ html {
   }
 }
 .forms .formulario {
-  border: solid 1px #F4E390;
+  border: solid 2px #E2DEDA;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -878,6 +882,7 @@ html {
 }
 @media (min-width: 768px) {
   .forms .formulario {
+    border: solid 3px #E2DEDA;
     padding: 25px;
   }
 }
@@ -951,7 +956,7 @@ html {
   }
 }
 .forms .formulario .btn_form {
-  color: gray;
+  color: #3F3C3C;
 }
 @media (min-width: 768px) {
   .forms .formulario .btn_form {
@@ -976,7 +981,7 @@ html {
   }
 }
 .forms .btn_form_2 {
-  color: gray;
+  color: #3F3C3C;
   margin-left: 15px;
 }
 @media (min-width: 768px) {
@@ -1003,26 +1008,26 @@ html {
 }
 
 .tienda {
-  padding: 30px 45px 30px 45px;
+  padding: 40px 45px 30px 45px;
 }
 @media (min-width: 400px) {
   .tienda {
-    padding: 40px 50px;
+    padding: 50px 50px;
   }
 }
 @media (min-width: 576px) {
   .tienda {
-    padding: 45px 50px;
+    padding: 55px 50px;
   }
 }
 @media (min-width: 768px) {
   .tienda {
-    padding: 50px 90px;
+    padding: 60px 90px;
   }
 }
 @media (min-width: 992px) {
   .tienda {
-    padding: 60px 120px 40px 120px;
+    padding: 70px 120px 50px 120px;
   }
 }
 @media (min-width: 1200px) {
@@ -1056,7 +1061,8 @@ html {
 
 .tienda_card {
   margin: 10px;
-  background-color: #F2EAC3;
+  background-color: #F8F5F5;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   padding: 10px;
   border: white;
 }
@@ -1190,6 +1196,7 @@ html {
   }
 }
 .aside_tienda p {
+  color: #7a5c3c;
   font-size: 1rem;
   padding-left: 5px;
 }
@@ -1244,6 +1251,7 @@ footer {
   }
 }
 footer h3 {
+  color: #696767;
   font-size: 1.2rem;
 }
 @media (min-width: 768px) {
@@ -1274,6 +1282,7 @@ footer .pie_icon {
   }
 }
 footer p {
+  color: #696767;
   font-size: 1.2rem;
 }
 @media (min-width: 1200px) {
@@ -1283,7 +1292,7 @@ footer p {
 }
 footer a {
   text-decoration: none;
-  color: #3F3C3C;
+  color: #696767;
   font-size: 1.2rem;
 }
 @media (min-width: 1200px) {
@@ -1311,6 +1320,7 @@ footer a {
   }
 }
 .copyright p {
+  color: #696767;
   font-size: 1rem;
   text-align: left;
 }

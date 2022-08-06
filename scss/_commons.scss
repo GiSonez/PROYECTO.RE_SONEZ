@@ -14,17 +14,18 @@ html{
 
 .titulo{
 	height: 50px;
-	margin-left: 70px;
+	margin-top: 30px;
+	margin-left: 100px;
 	border-radius: 45px 0 45px 0;
 	border-bottom: solid 4.5px map-get($map:$paleta,$key:"diez");
 	border-left: solid 4.5px map-get($map:$paleta,$key:"diez");
 	@include medias(Xs){
-		margin-left: 100px;
-		margin-top: 30px;
+		margin-left: 120px;
+		margin-top: 40px;
 	}
 	@include medias(Sm){
-		margin-left: 130px;
-		margin-top: 35px;
+		margin-left: 160px;
+		margin-top: 50px;
 	}
 	@include medias(Md){
 		height: 60px;

@@ -1,17 +1,17 @@
 
 .tienda{
-	padding: 30px 45px 30px 45px;
+	padding: 40px 45px 30px 45px;
 	@include medias(Xs){
-		padding: 40px 50px;
+		padding: 50px 50px;
 		}
 	@include medias(Sm){
-		padding: 45px 50px;
+		padding: 55px 50px;
 		}
 	@include medias(Md){
-		padding: 50px 90px;
+		padding: 60px 90px;
 		}
 	@include medias(Lg){
-		padding: 60px 120px 40px 120px;
+		padding: 70px 120px 50px 120px;
 		}
 	@include medias(Xl){
 		padding: 80px 160px 60px 160px;
@@ -37,7 +37,8 @@
 
 .tienda_card{
 	margin: 10px;
-	background-color: $colorTienda;
+	background-color: $blanco;
+	box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 	padding: 10px;
 	border: white;
 	@include medias(Md){
@@ -56,7 +57,7 @@
 	h2, p{
 		text-align: $textCenter;
 		font-size: $textSm;
-		color: #3F3C3C;
+		color: $black;
 		@include medias(Md){
 			font-size: $textMd;
 			}
@@ -107,7 +108,7 @@
 	img{
 		width: 60px;
 		height: 60px;
-		border-right:solid 1px map-get($map:$paletaBeige,$key:"uno");
+		border-right:solid 1px map-get($map:$paleta,$key:"cero");
 		margin: 10px;
 		padding: 10px;
 		@include medias(Md){
@@ -124,7 +125,7 @@
 		}
 	}
 	h2{
-		color: map-get($map:$paletaBeige,$key:"uno");
+		color: map-get($map:$paleta,$key:"cero");
 		font-size: $textSm;
 		font-weight: 600;
 		padding-left: 5px;
@@ -141,6 +142,7 @@
 		}
 	}
 	p{
+		color: map-get($map:$paleta,$key:"cero");
 		font-size: 1rem;
 		padding-left: 5px;
 		@include medias(Md){
