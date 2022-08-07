@@ -49,10 +49,6 @@
 		@include medias(Md){
 			border: 2px;
 			}
-		&:hover{
-			transform: scale(1.2);
-			cursor: pointer;
-		}
 	}
 	h2, p{
 		text-align: $textCenter;
