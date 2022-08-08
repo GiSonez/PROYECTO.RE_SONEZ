@@ -4,7 +4,7 @@
 	margin: 5px 2px 30px 2px;
 	@include medias(Md){
 		@include d-flex(row-reverse, center, center);
-		margin: 0 10px 0 40px;
+		margin: 0 10px 0 30px;
 		border-top: solid 5px map-get($map:$paleta,$key:"diez");
 		}
 	@include medias(Lg){
@@ -31,26 +31,29 @@
 		height: 340px;
 		}
 		@include medias(Md){
-			width: 1500px;
-			height: auto;	
+			width: 1300px;
+			height: auto;
+			margin-bottom: 10px;	
 			}
 		@include medias(Lg){
 			width: 1700px;
 			height: auto;
+			margin-bottom: 15px;
 		}
 		@include medias(Xl){
-			width: 2200px;
+			width: 2300px;
+			margin-bottom: 25px;
 			}
 	}
 
 	.main_index__text{
 		margin: 0 40px;
 		@include medias(Md){
-			margin: 0 20px 10px 5px;
+			margin: 30px 20px 10px 30px;
 			padding-bottom: 15px;	
 			}
 		@include medias(Lg){
-			margin: 0 30px 0 30px;
+			margin: 10px 30px 0 30px;
 			padding-bottom: 20px;
 			}
 		@include medias(Xl){

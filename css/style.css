@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap");
-.btn_base, .btn_error, .btn_tienda, .forms .btn_form_2, .forms .formulario .btn_form {
+.btn_base, .error .error__text .btn_error, .tienda_card .btn_tienda, .forms .btn_form_2, .forms .formulario .btn_form {
   background: linear-gradient(to top, #EFEAD1, white);
   width: 80px;
   height: 25px;
@@ -40,6 +40,29 @@ nav {
     font-size: 1.5rem;
   }
 }
+nav .nav_logo {
+  width: 100px;
+}
+@media (min-width: 576px) {
+  nav .nav_logo {
+    width: 105px;
+  }
+}
+@media (min-width: 768px) {
+  nav .nav_logo {
+    width: 110px;
+  }
+}
+@media (min-width: 992px) {
+  nav .nav_logo {
+    width: 120px;
+  }
+}
+@media (min-width: 1200px) {
+  nav .nav_logo {
+    width: 140px;
+  }
+}
 nav ul {
   border-left: solid 2px #E2C16F;
 }
@@ -60,35 +83,6 @@ nav ul {
 }
 nav ul li a:hover {
   color: #3F3C3C;
-}
-
-.nav_logo {
-  width: 90px;
-}
-@media (min-width: 400px) {
-  .nav_logo {
-    width: 100px;
-  }
-}
-@media (min-width: 576px) {
-  .nav_logo {
-    width: 105px;
-  }
-}
-@media (min-width: 768px) {
-  .nav_logo {
-    width: 110px;
-  }
-}
-@media (min-width: 992px) {
-  .nav_logo {
-    width: 120px;
-  }
-}
-@media (min-width: 1200px) {
-  .nav_logo {
-    width: 140px;
-  }
 }
 
 html {
@@ -223,7 +217,7 @@ html {
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    margin: 0 10px 0 40px;
+    margin: 0 10px 0 30px;
     border-top: solid 5px #E2C16F;
   }
 }
@@ -260,19 +254,22 @@ html {
 }
 @media (min-width: 768px) {
   .main_index__img {
-    width: 1500px;
+    width: 1300px;
     height: auto;
+    margin-bottom: 10px;
   }
 }
 @media (min-width: 992px) {
   .main_index__img {
     width: 1700px;
     height: auto;
+    margin-bottom: 15px;
   }
 }
 @media (min-width: 1200px) {
   .main_index__img {
-    width: 2200px;
+    width: 2300px;
+    margin-bottom: 25px;
   }
 }
 
@@ -281,13 +278,13 @@ html {
 }
 @media (min-width: 768px) {
   .main_index__text {
-    margin: 0 20px 10px 5px;
+    margin: 30px 20px 10px 30px;
     padding-bottom: 15px;
   }
 }
 @media (min-width: 992px) {
   .main_index__text {
-    margin: 0 30px 0 30px;
+    margin: 10px 30px 0 30px;
     padding-bottom: 20px;
   }
 }
@@ -1099,26 +1096,25 @@ html {
     font-size: 1.6rem;
   }
 }
-
-.btn_tienda {
+.tienda_card .btn_tienda {
   color: #3F3C3C;
   width: 90px;
 }
 @media (min-width: 768px) {
-  .btn_tienda {
+  .tienda_card .btn_tienda {
     font-size: 1.3rem;
     width: 110px;
     height: 30px;
   }
 }
 @media (min-width: 992px) {
-  .btn_tienda {
+  .tienda_card .btn_tienda {
     font-size: 1.4rem;
     width: 115px;
   }
 }
 @media (min-width: 1200px) {
-  .btn_tienda {
+  .tienda_card .btn_tienda {
     font-size: 1.5rem;
     width: 120px;
   }
@@ -1144,6 +1140,10 @@ html {
     margin: 50px 0;
     padding: 0 40px;
   }
+}
+.aside_tienda .aside_tienda__card {
+  margin: 10px 0;
+  border: none;
 }
 .aside_tienda img {
   width: 60px;
@@ -1214,11 +1214,6 @@ html {
   }
 }
 
-.aside_tienda__card {
-  margin: 10px 0;
-  border: none;
-}
-
 footer {
   background-color: #F3F2D4;
   height: auto;
@@ -1229,11 +1224,6 @@ footer {
   footer {
     margin-top: 50px;
     padding: 50px 0 0 30px;
-  }
-}
-@media (min-width: 992px) and (max-width: 1023px) {
-  footer {
-    padding: 50px 0 0 40px;
   }
 }
 @media (min-width: 992px) {
@@ -1418,48 +1408,40 @@ footer a {
 .error .error__text a {
   text-decoration: none;
   color: #3F3C3C;
-  font-size: 1.3rem;
-}
-@media (min-width: 768px) {
-  .error .error__text a {
-    font-size: 1.4rem;
-  }
 }
 @media (min-width: 992px) {
   .error .error__text a {
-    font-size: 1.5rem;
     padding-top: 10px;
   }
 }
 @media (min-width: 1200px) {
   .error .error__text a {
-    font-size: 1.6rem;
     padding-top: 15px;
   }
 }
-.error .error__text a:hover {
-  cursor: pointer;
-}
-
-.btn_error {
+.error .error__text .btn_error {
   color: #3F3C3C;
   width: 90px;
+  font-size: 1.3rem;
 }
 @media (min-width: 768px) {
-  .btn_error {
+  .error .error__text .btn_error {
     width: 100px;
+    font-size: 1.4rem;
   }
 }
 @media (min-width: 992px) {
-  .btn_error {
+  .error .error__text .btn_error {
     width: 110px;
     height: 35px;
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 1200px) {
-  .btn_error {
+  .error .error__text .btn_error {
     width: 115px;
     height: 40px;
+    font-size: 1.5rem;
   }
 }
 

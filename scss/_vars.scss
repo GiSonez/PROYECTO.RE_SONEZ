@@ -23,8 +23,6 @@ $textLeft:left;
 $textCenter:center;
 $textJust:justify;
 
-
-
 //colors
 $colorGris:#EFEAD1;
 $black:#3F3C3C;
@@ -67,6 +65,8 @@ $blanco: #F8F5F5;
 	//@include d-flex(column, center, center);
 
 
+				//mixins breakpoints
+
 @mixin medias($breakpoint){
 	@if $breakpoint == Xs{
 		@media (min-width: 400px){
@@ -105,7 +105,7 @@ $blanco: #F8F5F5;
 	}
 }
 
-//@include medias(Md){
+//@include medias(Md)
 
 
 

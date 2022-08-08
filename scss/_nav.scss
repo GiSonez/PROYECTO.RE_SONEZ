@@ -19,6 +19,24 @@ nav{
 		margin: 30px 50px 35px 75px;	
 		font-size: $textLg;
 		}
+
+	.nav_logo{
+		width: 100px;
+		@include medias(Sm){
+			width: 105px;
+			}
+		@include medias(Md){
+			width: 110px;
+			}
+		@include medias(Lg){
+			width: 120px;
+			}
+		@include medias(Xl){
+			width: 140px;
+			
+			}
+	}
+
 	ul{
 		border-left: solid 2px map-get($map:$paleta,$key:"diez");
 		@include medias(Md){
@@ -41,23 +59,3 @@ nav{
 	}
 }
 
-
-.nav_logo{
-	width: 90px;
-	@include medias(Xs){
-		width: 100px;
-		}
-	@include medias(Sm){
-		width: 105px;
-		}
-	@include medias(Md){
-		width: 110px;
-		}
-	@include medias(Lg){
-		width: 120px;
-		}
-	@include medias(Xl){
-		width: 140px;
-		
-		}
-	}

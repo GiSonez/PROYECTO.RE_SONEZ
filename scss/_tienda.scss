@@ -64,29 +64,28 @@
 			font-size: $textXl;
 			}
 	}
+	.btn_tienda{
+		@extend .btn_base;
+		color: $black;
+		width: 90px;
+		@include medias(Md){
+			font-size: $textSm;
+			width: 110px;
+			height: 30px;
+			}
+		@include medias(Lg){
+			font-size: $textMd;
+			width: 115px;
+			}
+		@include medias(Xl){
+			font-size: $textLg;
+			width: 120px;
+			}
+	}
 	
 }
 
 	
-.btn_tienda{
-	@extend .btn_base;
-	color: $black;
-	width: 90px;
-	@include medias(Md){
-		font-size: $textSm;
-		width: 110px;
-		height: 30px;
-		}
-	@include medias(Lg){
-		font-size: $textMd;
-		width: 115px;
-		}
-	@include medias(Xl){
-		font-size: $textLg;
-		width: 120px;
-		}
-}
-
 .aside_tienda{
 	margin: 20px 0;
 	padding:10px 0;
@@ -100,6 +99,10 @@
 	@include medias(Xl){
 		margin: 50px 0;
 		padding: 0 40px;
+	}
+	.aside_tienda__card{
+		margin: 10px 0;
+		border: none;
 	}
 	img{
 		width: 60px;
@@ -155,7 +158,4 @@
 	}
 }
 
-.aside_tienda__card{
-	margin: 10px 0;
-	border: none;
-}
+
