@@ -1,77 +1,87 @@
 
-.text_taller{
-	border: none;
-	padding: 40px 30px 20px 30px;
-	@include medias(Xs){
-		padding: 50px 30px 20px 30px;
-		}
-	@include medias(Sm){
-		padding: 60px 40px 30px 40px;
-		}
-	@include medias(Md){
-		padding: 60px 40px 40px 40px;
-		}
-	@include medias(Lg){
-		padding: 60px 5px 30px 50px;
-		}
-	@include medias(Xl){
-		padding: 80px 20px 40px 75px;
-		}
-	p{
-		@include textoTitulo($textSm, 2.6rem, 0, 0, $black);
-		text-align: $textLeft;
+	.text_taller{
+		background-color: $blanco;
+		margin-top: 10px;
+		border: none;
+		padding: 40px 30px 20px 30px;
+		@include medias(Xs){
+			padding: 50px 30px 20px 30px;
+			}
+		@include medias(Sm){
+			padding: 60px 40px 30px 40px;
+			}
+		@include medias(Md){
+			padding: 60px 40px 40px 40px;
+			}
 		@include medias(Lg){
-			@include textoTitulo($textMd, 2.6rem, 0, 0, $black);
+			padding: 60px 380px 60px 50px;
+			}
+		@include medias(Xl){
+			padding: 80px 500px 80px 75px;
+			}
+		p{
+			@include textoTitulo($textSm, 2.6rem, 0, 0, $black);
+			text-align: $textLeft;
+			@include medias(Lg){
+				@include textoTitulo($textMd, 2.6rem, 0, 0, $black);
+			}
+			@include medias(Xl){
+				font-size: $textLg;
+				line-height: 3rem;
+				}
+			a{
+				text-decoration: none;
+				color: $black;
+				font-weight: $textBold;
+				&:hover{
+					cursor: pointer;
+				}
+			}	
+		}
+	}
+
+	.adorno_taller{
+		border: none;
+		margin: 30px;
+		@include medias(Xs){
+			margin: 40px 0 50px 0;
+		}
+		@include medias(Sm){
+			margin: 50px 0 60px 0;
+		}
+		@include medias(Md){
+			margin: 60px 0 70px 0;
+		}
+		@include medias(Lg){
+			margin: 70px 0 80px 0;
 		}
 		@include medias(Xl){
-			font-size: $textLg;
-			line-height: 3rem;
-			}
-		a{
-			text-decoration: none;
-			color: $black;
-			font-weight: $textBold;
-			&:hover{
-				cursor: pointer;
-			}
-		}	
-	}
-}
-
-.adorno_taller{
-	border: none;
-	margin-bottom: 30px;
-	@include medias(Lg){
-		padding-top: 70px;
-	}
-	@include medias(Xl){
-		padding-top: 80px;
-	}
-}
-
-
-.img_taller{
-	border: none;
-	padding: 30px 60px 0 60px;
-	@include medias(Xs){
-		padding: 30px 70px 0 70px;
-	}
-	@include medias(Sm){
-		padding: 40px 80px 0 80px;
-	}
-	@include medias(Md){
-		padding: 50px 120px 0 120px;
+			margin: 80px 0 90px 0;
 		}
-	@include medias(Lg){
-		padding: 40px 10px 0 10px;
 	}
-	@include medias(Xl){
-		padding: 50px 20px 0 20px;
-	}
-	
-}
 
 
+	.img_taller{
+		border: none;
+		padding: 30px 30px 0 30px;
+		@include medias(Xs){
+			padding: 40px 70px 0 70px;
+		}
+		@include medias(Sm){
+			padding: 40px 80px 0 80px;
+		}
+		@include medias(Md){
+			padding: 50px 120px 0 120px;
+			}
+		@include medias(Lg){
+			padding: 60px 140px 0 140px;
+			margin-bottom: 30px;
+		}
+		@include medias(Xl){
+			padding: 60px 250px 0 250px;
+		}
+		
+	}
 
 
 

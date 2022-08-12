@@ -5,16 +5,11 @@
 	@include medias(Md){
 		@include d-flex(row-reverse, center, center);
 		margin: 0 10px 0 30px;
-		border-top: solid 5px map-get($map:$paleta,$key:"diez");
-		}
-	@include medias(Lg){
-		border-top: solid 5.5px map-get($map:$paleta,$key:"diez");
 		}
 	@include medias(Xl){
 		margin-right: 20px;
 		margin-left: 80px;
 		margin-bottom: 40px;
-		border-top: solid 8px map-get($map:$paleta,$key:"diez");
 		}
 }
 
@@ -24,11 +19,11 @@
 		margin-bottom: 50px;
 		@include medias(Xs){
 		width: 560px;
-		height: 260px;
+		height: 250px;
 		}
 		@include medias(Sm){
 		width: 760px;
-		height: 340px;
+		height: 310px;
 		}
 		@include medias(Md){
 			width: 1300px;
@@ -43,6 +38,7 @@
 		@include medias(Xl){
 			width: 2300px;
 			margin-bottom: 25px;
+			box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 			}
 	}
 
@@ -60,12 +56,16 @@
 			margin: 0 40px 0 40px;
 			}
 		h1{
+			font-family: $secFont;
 			text-align: $textLeft;
-			font-size: $textSm;
+			font-size: $textMd;
 			font-weight: $textBold;
 			line-height: 2.4rem;
+			@include medias(Sm){
+				font-size: $textLg;
+			}
 			@include medias(Md){
-				font-size: $textSm;
+				font-size: $textMd;
 			}
 			@include medias(Lg){
 				font-size: $textMd;
@@ -80,6 +80,9 @@
 			text-align: $textLeft;
 			font-size: $textSm;
 			line-height: 2.4rem;
+			@include medias(Sm){
+				font-size: $textMd;
+			}
 			@include medias(Md){
 				font-size: 1.2rem;
 			}
@@ -98,6 +101,7 @@
 .aside_index{
 	@include d-flex(column, center, center);
 	padding-top: 50px;
+	background-color: $blanco;
 	@include medias(Xs){
 		padding-top: 50px
 	}
@@ -118,18 +122,19 @@
 		padding-bottom: 30px;
 		}
 	h3{
-		font-size: $textSm;
-		line-height: 2.6rem;
+		font-family: $secFont;
+		font-size: $textMd;
+		line-height: 2.8rem;
 		@include medias(Md){
-			line-height: 2.2rem;
+			line-height: 3.2rem;
 			}
 		@include medias(Lg){
-			font-size: $textMd;
-			line-height: 2.8rem;
+			font-size: $textLg;
+			line-height: 3.5rem;
 			}
 		@include medias(Xl){
-			font-size: $textXl;
-			line-height: 3.2rem;
+			font-size: 1.8rem;
+			line-height: 3.8rem;
 			}
 	}
 	p{
@@ -137,8 +142,8 @@
 		font-size: $textSm;
 		line-height: 2.6rem;
 		@include medias(Md){
-			font-size: 1.2rem;
-			line-height: 2.2rem;	
+			font-size: $textSm;
+			line-height: 2.6rem;	
 			}
 		@include medias(Lg){
 			font-size: $textMd;
@@ -174,7 +179,13 @@
 
 .adorno{
 	border: none;
-	margin-bottom: 40px;
+	margin: 40px 0;
+	@include medias(Lg){
+		margin: 50px 0;
+	}
+	@include medias(Xl){
+		margin: 60px 0;
+	}
 }
 
 
@@ -197,22 +208,22 @@
 		width: 35%;
 	}
 	p{
-		@include textoTitulo(1rem, 4rem, 0.1rem, 0.1rem, $black);
+		@include textoTitulo(1.1rem, 2.5rem, 0, 0, $black);
 		text-align: $textCenter;
 		@include medias(Xs){
-			@include textoTitulo(1.1rem, 3rem, 0.2rem, 0.2rem, $black);
+			@include textoTitulo($textSm, 3rem, 0, 0, $black);
 		}
 		@include medias(Sm){
-			@include textoTitulo($textSm, 4rem, 0.2rem, 0.2rem, $black);
+			@include textoTitulo($textMd, 4rem, 0.1rem, 0.1rem, $black);
 		}
 		@include medias(Md){
-			@include textoTitulo($textSm, 4rem, 0.2rem, 0.2rem, $black);
+			@include textoTitulo($textMd, 4rem, 0.2rem, 0.2rem, $black);
 		}
 		@include medias(Lg){
-			@include textoTitulo($textMd, 5rem, 0.3rem, 0.3rem, $black);
+			@include textoTitulo($textLg, 5rem, 0.3rem, 0.3rem, $black);
 		}
 		@include medias(Xl){
-			@include textoTitulo($textLg, 6rem, 0.3rem, 0.3rem, $black);
+			@include textoTitulo(1.7rem, 6rem, 0.3rem, 0.3rem, $black);
 		}
 	}
 
@@ -233,22 +244,25 @@
 			margin-bottom: 25px;
 		}
 		a{
-			@include textoTitulo(1rem, 2rem, 0.1rem, 0.1rem, $black);
+			@include textoTitulo(1rem, 2rem, 0, 0, $black);
 			text-decoration: none;
 			&:hover{
 				cursor: pointer;
 			}
 			@include medias(Xs){
-			@include textoTitulo(1.1rem, 3rem, 0.2rem, 0.2rem, $black);
+			@include textoTitulo(1.2rem, 3rem, 0, 0, $black);
+			}
+			@include medias(Sm){
+			@include textoTitulo($textSm, 3rem, 0.1rem, 0.1rem, $black);
 			}
 			@include medias(Md){
-			@include textoTitulo(1.2rem, 4rem, 0.2rem, 0.2rem, $black);
+			@include textoTitulo($textSm, 4rem, 0.2rem, 0.2rem, $black);
 			}
 			@include medias(Lg){
-			@include textoTitulo($textSm, 5rem, 0.3rem, 0.3rem, $black);
+			@include textoTitulo($textMd, 5rem, 0.3rem, 0.3rem, $black);
 			}
 			@include medias(Xl){
-			@include textoTitulo($textMd, 6rem, 0.3rem, 0.3rem, $black);
+			@include textoTitulo($textLg, 6rem, 0.3rem, 0.3rem, $black);
 			}
 		}
 	}
