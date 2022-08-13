@@ -26,18 +26,18 @@ nav {
 }
 @media (min-width: 768px) {
   nav {
-    margin: 20px 20px 30px 30px;
+    margin: 20px 20px 30px 55px;
     font-size: 1.3rem;
   }
 }
 @media (min-width: 992px) {
   nav {
-    margin: 25px 30px 30px 50px;
+    margin: 25px 30px 30px 55px;
   }
 }
 @media (min-width: 1200px) {
   nav {
-    margin: 30px 50px 35px 75px;
+    margin: 30px 50px 35px 95px;
     font-size: 1.5rem;
   }
 }
@@ -98,7 +98,7 @@ html {
 
 .titulo {
   margin-top: 30px;
-  padding-left: 40px;
+  padding-left: 30px;
 }
 @media (min-width: 400px) {
   .titulo {
@@ -190,7 +190,7 @@ html {
     letter-spacing: 0;
     color: #3F3C3C;
     padding-top: 50px;
-    padding-left: 100px;
+    padding-left: 80px;
   }
 }
 
@@ -213,7 +213,7 @@ html {
 @media (min-width: 1200px) {
   .main_index {
     margin-right: 20px;
-    margin-left: 80px;
+    margin-left: 60px;
     margin-bottom: 40px;
   }
 }
@@ -253,7 +253,6 @@ html {
   .main_index__img {
     width: 2300px;
     margin-bottom: 25px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -339,7 +338,7 @@ html {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 55px;
   background-color: #F8F5F5;
 }
 @media (min-width: 400px) {
@@ -628,33 +627,35 @@ html {
 
 .text_taller {
   background-color: #F8F5F5;
-  margin-top: 10px;
+  margin-top: 5px;
   border: none;
-  padding: 40px 30px 20px 30px;
+  padding: 45px 30px 20px 30px;
 }
 @media (min-width: 400px) {
   .text_taller {
-    padding: 50px 30px 20px 30px;
+    padding: 50px 50px 20px 35px;
   }
 }
 @media (min-width: 576px) {
   .text_taller {
-    padding: 60px 40px 30px 40px;
+    margin-top: 2px;
+    padding: 60px 80px 30px 50px;
   }
 }
 @media (min-width: 768px) {
   .text_taller {
-    padding: 60px 40px 40px 40px;
+    margin-top: 0;
+    padding: 70px 150px 40px 60px;
   }
 }
 @media (min-width: 992px) {
   .text_taller {
-    padding: 60px 380px 60px 50px;
+    padding: 80px 320px 60px 60px;
   }
 }
 @media (min-width: 1200px) {
   .text_taller {
-    padding: 80px 500px 80px 75px;
+    padding: 80px 500px 80px 100px;
   }
 }
 .text_taller p {
@@ -691,16 +692,16 @@ html {
 
 .adorno_taller {
   border: none;
-  margin: 30px;
+  margin: 40px;
 }
 @media (min-width: 400px) {
   .adorno_taller {
-    margin: 40px 0 50px 0;
+    margin: 50px 0;
   }
 }
 @media (min-width: 576px) {
   .adorno_taller {
-    margin: 50px 0 60px 0;
+    margin: 60px 0;
   }
 }
 @media (min-width: 768px) {
@@ -721,62 +722,62 @@ html {
 
 .img_taller {
   border: none;
-  padding: 30px 30px 0 30px;
+  padding: 40px 30px 0 30px;
 }
 @media (min-width: 400px) {
   .img_taller {
-    padding: 40px 70px 0 70px;
+    padding: 50px 70px 0 70px;
   }
 }
 @media (min-width: 576px) {
   .img_taller {
-    padding: 40px 80px 0 80px;
+    padding: 70px 80px 0 80px;
   }
 }
 @media (min-width: 768px) {
   .img_taller {
-    padding: 50px 120px 0 120px;
+    padding: 60px 120px 0 120px;
   }
 }
 @media (min-width: 992px) {
   .img_taller {
-    padding: 60px 140px 0 140px;
+    padding: 70px 140px 0 140px;
     margin-bottom: 30px;
   }
 }
 @media (min-width: 1200px) {
   .img_taller {
-    padding: 60px 250px 0 250px;
+    padding: 80px 250px 0 250px;
   }
 }
 
 .main_ayd_text {
   background-color: #F8F5F5;
-  padding: 40px 10px 20px 45px;
+  padding: 50px 10px 20px 35px;
 }
 @media (min-width: 400px) {
   .main_ayd_text {
-    padding: 50px 50px 30px 45px;
+    padding: 50px 50px 30px 40px;
   }
 }
 @media (min-width: 576px) {
   .main_ayd_text {
-    padding: 60px 150px 40px 45px;
+    padding: 60px 100px 40px 45px;
   }
 }
 @media (min-width: 768px) {
   .main_ayd_text {
-    padding: 60px 150px 50px 90px;
+    padding: 60px 150px 50px 60px;
   }
 }
 @media (min-width: 992px) {
   .main_ayd_text {
-    padding: 80px 70px 60px 120px;
+    padding: 80px 200px 60px 60px;
   }
 }
 @media (min-width: 1200px) {
   .main_ayd_text {
-    padding: 90px 80px 80px 140px;
+    padding: 90px 80px 80px 100px;
   }
 }
 .main_ayd_text p {
@@ -799,7 +800,7 @@ html {
 @media (min-width: 1200px) {
   .main_ayd_text p {
     font-size: 1.6rem;
-    line-height: 4rem;
+    line-height: 3.8rem;
   }
 }
 
@@ -867,43 +868,57 @@ html {
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 }
 
+.titulo_contacto {
+  background-color: #F8F5F5;
+  height: 60px;
+  margin-top: 2px;
+}
+@media (min-width: 768px) {
+  .titulo_contacto {
+    height: 70px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .titulo_contacto {
+    height: 80px;
+  }
+}
+
 .forms {
-  margin: 40px 0;
+  margin: 0 0 40px 0;
   padding: 0 20px;
 }
 @media (min-width: 400px) {
   .forms {
-    margin: 40px 0;
     padding: 0 35px;
   }
 }
 @media (min-width: 576px) {
   .forms {
-    margin: 45px 0;
     padding: 0 50px;
   }
 }
 @media (min-width: 768px) {
   .forms {
-    margin: 50px 0 60px 0;
+    margin: 20px 0;
     padding: 0 40px;
   }
 }
 @media (min-width: 992px) {
   .forms {
-    margin: 60px 0 70px 0;
     padding: 0 60px;
   }
 }
 @media (min-width: 1200px) {
   .forms {
-    margin: 70px 0;
     padding: 0 90px;
   }
 }
 .forms .formulario {
-  border: solid 2px #E2DEDA;
-  padding: 20px;
+  border: none;
+  padding: 30px;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
   margin-bottom: 20px;
 }
 @media (min-width: 576px) {
@@ -914,7 +929,6 @@ html {
 }
 @media (min-width: 768px) {
   .forms .formulario {
-    border: solid 3px #E2DEDA;
     padding: 25px;
   }
 }
@@ -964,14 +978,12 @@ html {
 }
 @media (min-width: 992px) {
   .forms .formulario p, .forms .formulario label {
-    font-size: 1.4rem;
     line-height: 2rem;
   }
 }
 @media (min-width: 1200px) {
   .forms .formulario p, .forms .formulario label {
-    font-size: 1.5rem;
-    line-height: 3.2rem;
+    line-height: 2.8rem;
   }
 }
 .forms .formulario fieldset {
@@ -989,12 +1001,13 @@ html {
 }
 .forms .formulario .btn_form {
   color: #3F3C3C;
+  height: 35px;
 }
 @media (min-width: 768px) {
   .forms .formulario .btn_form {
     margin-top: 5px;
     width: 85px;
-    height: 30px;
+    height: 38px;
   }
 }
 @media (min-width: 992px) {
@@ -1002,7 +1015,7 @@ html {
     margin-right: 30px;
     margin-top: 10px;
     width: 100px;
-    height: 35px;
+    height: 40px;
     font-size: 1.3rem;
   }
 }
@@ -1014,13 +1027,14 @@ html {
 }
 .forms .btn_form_2 {
   color: #3F3C3C;
+  height: 35px;
   margin-left: 15px;
 }
 @media (min-width: 768px) {
   .forms .btn_form_2 {
     margin-top: 5px;
     width: 85px;
-    height: 30px;
+    height: 38px;
   }
 }
 @media (min-width: 992px) {
@@ -1028,7 +1042,7 @@ html {
     margin-left: 25px;
     margin-top: 10px;
     width: 100px;
-    height: 35px;
+    height: 40px;
     font-size: 1.3rem;
   }
 }
@@ -1040,31 +1054,36 @@ html {
 }
 
 .tienda {
-  padding: 40px 45px 30px 45px;
+  background-color: #F8F5F5;
+  padding: 40px 45px 30px 35px;
+  margin-bottom: 30px;
 }
 @media (min-width: 400px) {
   .tienda {
-    padding: 50px 50px;
+    padding: 50px 60px 50px 40px;
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 576px) {
   .tienda {
-    padding: 55px 50px;
+    padding: 55px 100px 55px 50px;
+    margin-bottom: 50px;
   }
 }
 @media (min-width: 768px) {
   .tienda {
-    padding: 60px 90px;
+    padding: 60px 140px 60px 65px;
   }
 }
 @media (min-width: 992px) {
   .tienda {
-    padding: 70px 120px 50px 120px;
+    padding: 70px 200px 70px 70px;
+    margin-bottom: 60px;
   }
 }
 @media (min-width: 1200px) {
   .tienda {
-    padding: 80px 160px 60px 160px;
+    padding: 70px 200px 70px 105px;
   }
 }
 .tienda p {
@@ -1156,31 +1175,32 @@ html {
 }
 
 .aside_tienda {
-  margin: 20px 0;
+  margin: 30px 0;
   padding: 10px 0;
 }
 @media (min-width: 768px) {
   .aside_tienda {
-    margin: 30px 0;
-    padding: 10px;
+    margin: 40px 0;
+    padding: 15px;
   }
 }
 @media (min-width: 992px) {
   .aside_tienda {
-    margin: 40px 0;
+    margin: 60px 0;
+    padding: 0 30px;
   }
 }
 @media (min-width: 1200px) {
   .aside_tienda {
-    margin: 50px 0;
-    padding: 0 40px;
+    margin: 100px 0;
+    padding: 0 60px 0 50px;
   }
 }
 .aside_tienda .aside_tienda__card {
   margin: 10px 0;
   border: none;
 }
-.aside_tienda img {
+.aside_tienda .aside_tienda__card img {
   width: 60px;
   height: 60px;
   border-right: solid 1px #7a5c3c;
@@ -1188,7 +1208,7 @@ html {
   padding: 10px;
 }
 @media (min-width: 768px) {
-  .aside_tienda img {
+  .aside_tienda .aside_tienda__card img {
     width: 70px;
     height: 70px;
     margin: 15px;
@@ -1196,54 +1216,54 @@ html {
   }
 }
 @media (min-width: 992px) {
-  .aside_tienda img {
+  .aside_tienda .aside_tienda__card img {
     width: 80px;
     height: 80px;
     margin: 15px;
     padding: 15px;
   }
 }
-.aside_tienda h2 {
+.aside_tienda .aside_tienda__card h2 {
   color: #7a5c3c;
   font-size: 1.3rem;
   font-weight: 600;
   padding-left: 5px;
 }
 @media (min-width: 768px) {
-  .aside_tienda h2 {
+  .aside_tienda .aside_tienda__card h2 {
     padding-left: 30px;
   }
 }
 @media (min-width: 992px) {
-  .aside_tienda h2 {
+  .aside_tienda .aside_tienda__card h2 {
     padding-left: 25px;
     margin-top: 15px;
   }
 }
 @media (min-width: 1200px) {
-  .aside_tienda h2 {
+  .aside_tienda .aside_tienda__card h2 {
     padding-left: 15px;
     margin-top: 15px;
   }
 }
-.aside_tienda p {
+.aside_tienda .aside_tienda__card p {
   color: #7a5c3c;
   font-size: 1rem;
   padding-left: 5px;
 }
 @media (min-width: 768px) {
-  .aside_tienda p {
+  .aside_tienda .aside_tienda__card p {
     padding-left: 30px;
   }
 }
 @media (min-width: 992px) {
-  .aside_tienda p {
+  .aside_tienda .aside_tienda__card p {
     padding-left: 25px;
     font-size: 1.3rem;
   }
 }
 @media (min-width: 1200px) {
-  .aside_tienda p {
+  .aside_tienda .aside_tienda__card p {
     padding-left: 15px;
     margin-top: 15px;
   }
@@ -1259,9 +1279,22 @@ footer {
     padding: 50px 0 0 30px;
   }
 }
+@media (min-width: 1200px) {
+  footer {
+    padding: 60px 0 0 30px;
+  }
+}
 footer h3 {
   color: #696767;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  letter-spacing: 0.1rem;
+  font-family: "Michroma", sans-serif;
+}
+@media (min-width: 576px) {
+  footer h3 {
+    font-size: 1.2rem;
+    letter-spacing: none;
+  }
 }
 @media (min-width: 768px) {
   footer h3 {
@@ -1296,7 +1329,7 @@ footer p {
 }
 @media (min-width: 1200px) {
   footer p {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 footer a {
@@ -1306,7 +1339,7 @@ footer a {
 }
 @media (min-width: 1200px) {
   footer a {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -1340,7 +1373,7 @@ footer a {
 }
 @media (min-width: 1200px) {
   .copyright p {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 }
 

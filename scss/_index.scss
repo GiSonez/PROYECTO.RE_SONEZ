@@ -8,7 +8,7 @@
 		}
 	@include medias(Xl){
 		margin-right: 20px;
-		margin-left: 80px;
+		margin-left: 60px;
 		margin-bottom: 40px;
 		}
 }
@@ -38,7 +38,6 @@
 		@include medias(Xl){
 			width: 2300px;
 			margin-bottom: 25px;
-			box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
 			}
 	}
 
@@ -100,7 +99,7 @@
 
 .aside_index{
 	@include d-flex(column, center, center);
-	padding-top: 50px;
+	padding-top: 55px;
 	background-color: $blanco;
 	@include medias(Xs){
 		padding-top: 50px

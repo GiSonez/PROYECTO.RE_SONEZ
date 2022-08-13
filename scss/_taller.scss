@@ -1,23 +1,25 @@
 
 	.text_taller{
 		background-color: $blanco;
-		margin-top: 10px;
+		margin-top: 5px;
 		border: none;
-		padding: 40px 30px 20px 30px;
+		padding: 45px 30px 20px 30px;
 		@include medias(Xs){
-			padding: 50px 30px 20px 30px;
+			padding: 50px 50px 20px 35px;
 			}
 		@include medias(Sm){
-			padding: 60px 40px 30px 40px;
+			margin-top: 2px;
+			padding: 60px 80px 30px 50px;
 			}
 		@include medias(Md){
-			padding: 60px 40px 40px 40px;
+			margin-top: 0;
+			padding: 70px 150px 40px 60px;
 			}
 		@include medias(Lg){
-			padding: 60px 380px 60px 50px;
+			padding: 80px 320px 60px 60px;
 			}
 		@include medias(Xl){
-			padding: 80px 500px 80px 75px;
+			padding: 80px 500px 80px 100px;
 			}
 		p{
 			@include textoTitulo($textSm, 2.6rem, 0, 0, $black);
@@ -42,12 +44,12 @@
 
 	.adorno_taller{
 		border: none;
-		margin: 30px;
+		margin: 40px;
 		@include medias(Xs){
-			margin: 40px 0 50px 0;
+			margin: 50px 0;
 		}
 		@include medias(Sm){
-			margin: 50px 0 60px 0;
+			margin: 60px 0;
 		}
 		@include medias(Md){
 			margin: 60px 0 70px 0;
@@ -63,22 +65,22 @@
 
 	.img_taller{
 		border: none;
-		padding: 30px 30px 0 30px;
+		padding: 40px 30px 0 30px;
 		@include medias(Xs){
-			padding: 40px 70px 0 70px;
+			padding: 50px 70px 0 70px;
 		}
 		@include medias(Sm){
-			padding: 40px 80px 0 80px;
+			padding: 70px 80px 0 80px;
 		}
 		@include medias(Md){
-			padding: 50px 120px 0 120px;
+			padding: 60px 120px 0 120px;
 			}
 		@include medias(Lg){
-			padding: 60px 140px 0 140px;
+			padding: 70px 140px 0 140px;
 			margin-bottom: 30px;
 		}
 		@include medias(Xl){
-			padding: 60px 250px 0 250px;
+			padding: 80px 250px 0 250px;
 		}
 		
 	}

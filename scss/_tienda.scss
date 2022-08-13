@@ -1,20 +1,25 @@
 
 .tienda{
-	padding: 40px 45px 30px 45px;
+	background-color: $blanco;
+	padding: 40px 45px 30px 35px;
+	margin-bottom: 30px;
 	@include medias(Xs){
-		padding: 50px 50px;
+		padding: 50px 60px 50px 40px;
+		margin-bottom: 40px;
 		}
 	@include medias(Sm){
-		padding: 55px 50px;
+		padding: 55px 100px 55px 50px;
+		margin-bottom: 50px;
 		}
 	@include medias(Md){
-		padding: 60px 90px;
+		padding: 60px 140px 60px 65px;
 		}
 	@include medias(Lg){
-		padding: 70px 120px 50px 120px;
+		padding: 70px 200px 70px 70px;
+		margin-bottom: 60px;
 		}
 	@include medias(Xl){
-		padding: 80px 160px 60px 160px;
+		padding: 70px 200px 70px 105px;
 		}
 	p{
 		text-align: $textLeft;
@@ -87,75 +92,85 @@
 
 	
 .aside_tienda{
-	margin: 20px 0;
+	margin: 30px 0;
 	padding:10px 0;
+	@include medias(Xs){
+		
+	}
+	@include medias(Sm){
+		
+	}
 	@include medias(Md){
-		margin: 30px 0;
-		padding:10px;
+		margin: 40px 0;
+		padding:15px;
 	}
 	@include medias(Lg){
-		margin: 40px 0;
+		margin: 60px 0;
+		padding: 0 30px;
 	}
 	@include medias(Xl){
-		margin: 50px 0;
-		padding: 0 40px;
+		margin: 100px 0;
+		padding: 0 60px 0 50px;
 	}
+
 	.aside_tienda__card{
 		margin: 10px 0;
 		border: none;
-	}
-	img{
-		width: 60px;
-		height: 60px;
-		border-right:solid 1px map-get($map:$paleta,$key:"cero");
-		margin: 10px;
-		padding: 10px;
-		@include medias(Md){
-			width: 70px;
-			height: 70px;
-			margin: 15px;
-			padding: 15px;
+	
+		img{
+			width: 60px;
+			height: 60px;
+			border-right:solid 1px map-get($map:$paleta,$key:"cero");
+			margin: 10px;
+			padding: 10px;
+			@include medias(Md){
+				width: 70px;
+				height: 70px;
+				margin: 15px;
+				padding: 15px;
+			}
+			@include medias(Lg){
+				width: 80px;
+				height: 80px;
+				margin: 15px;
+				padding: 15px;
+			}
 		}
-		@include medias(Lg){
-			width: 80px;
-			height: 80px;
-			margin: 15px;
-			padding: 15px;
-		}
-	}
-	h2{
-		color: map-get($map:$paleta,$key:"cero");
-		font-size: $textSm;
-		font-weight: 600;
-		padding-left: 5px;
-		@include medias(Md){
-			padding-left: 30px;
-		}
-		@include medias(Lg){
-			padding-left: 25px;
-			margin-top: 15px;
-		}
-		@include medias(Xl){
-			padding-left: 15px;
-			margin-top: 15px;
-		}
-	}
-	p{
-		color: map-get($map:$paleta,$key:"cero");
-		font-size: 1rem;
-		padding-left: 5px;
-		@include medias(Md){
-			padding-left: 30px;
-		}
-		@include medias(Lg){
-			padding-left: 25px;
+
+		h2{
+			color: map-get($map:$paleta,$key:"cero");
 			font-size: $textSm;
+			font-weight: 600;
+			padding-left: 5px;
+			@include medias(Md){
+				padding-left: 30px;
+			}
+			@include medias(Lg){
+				padding-left: 25px;
+				margin-top: 15px;
+			}
+			@include medias(Xl){
+				padding-left: 15px;
+				margin-top: 15px;
+			}
 		}
-		@include medias(Xl){
-			padding-left: 15px;
-			margin-top: 15px;
+		p{
+			color: map-get($map:$paleta,$key:"cero");
+			font-size: 1rem;
+			padding-left: 5px;
+			@include medias(Md){
+				padding-left: 30px;
+			}
+			@include medias(Lg){
+				padding-left: 25px;
+				font-size: $textSm;
+			}
+			@include medias(Xl){
+				padding-left: 15px;
+				margin-top: 15px;
+			}
 		}
-	}
+	}	
 }
 
 

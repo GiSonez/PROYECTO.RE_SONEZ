@@ -15,7 +15,7 @@ html{
 
 .titulo{
 	margin-top: 30px;
-	padding-left: 40px;
+	padding-left: 30px;
 	@include medias(Xs){
 		margin-top: 40px;
 		padding-left: 35px;
@@ -63,8 +63,7 @@ html{
 		@include medias(Xl){
 			@include textoTitulo(5rem, 0, 0, 0, $black);
 			padding-top: 50px;
-			padding-left: 100px;
-			
+			padding-left: 80px;	
 			}
 	}
 }

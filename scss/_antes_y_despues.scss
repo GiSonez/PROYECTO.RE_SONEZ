@@ -1,21 +1,21 @@
 
 .main_ayd_text{
 	background-color: $blanco;
-	padding: 40px 10px 20px 45px;
+	padding: 50px 10px 20px 35px;
 	@include medias(Xs){
-		padding: 50px 50px 30px 45px;
+		padding: 50px 50px 30px 40px;
 		}
 	@include medias(Sm){
-		padding: 60px 150px 40px 45px;
+		padding: 60px 100px 40px 45px;
 		}
 	@include medias(Md){
-		padding: 60px 150px 50px 90px;
+		padding: 60px 150px 50px 60px;
 		}
 	@include medias(Lg){
-		padding: 80px 70px 60px 120px;
+		padding: 80px 200px 60px 60px;
 		}
 	@include medias(Xl){
-		padding: 90px 80px 80px 140px;
+		padding: 90px 80px 80px 100px;
 		}
 	p{
 		text-align: $textLeft;
@@ -31,7 +31,7 @@
 			}
 		@include medias(Xl){
 			font-size: $textXl;
-			line-height: 4rem;
+			line-height: 3.8rem;
 			}
 	}
 }

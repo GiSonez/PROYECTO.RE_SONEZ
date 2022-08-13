@@ -10,14 +10,14 @@ nav{
 		margin: 20px 40px 30px 40px;
 	}
 	@include medias(Md){
-		margin: 20px 20px 30px 30px;
+		margin: 20px 20px 30px 55px;
 		font-size: $textSm;
 		}
 	@include medias(Lg){
-		margin: 25px 30px 30px 50px;
+		margin: 25px 30px 30px 55px;
 		}
 	@include medias(Xl){
-		margin: 30px 50px 35px 75px;	
+		margin: 30px 50px 35px 95px;	
 		font-size: $textLg;
 		}
 

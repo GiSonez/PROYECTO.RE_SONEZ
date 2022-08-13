@@ -1,37 +1,47 @@
+
+.titulo_contacto{
+	background-color: $blanco;
+	height: 60px;
+	margin-top: 2px;
+	@include medias(Md){
+		height: 70px;
+		margin-top: 0;
+	}
+	@include medias(Xl){
+		height: 80px;
+	}
+}
+
 .forms{
-	margin: 40px 0;
+	margin: 0 0 40px 0;
 	padding: 0 20px; 
 	@include medias(Xs){
-		margin: 40px 0;
 		padding: 0 35px; 
 	}
 	@include medias(Sm){
-		margin: 45px 0;
 		padding: 0 50px; 
 	}
 	@include medias(Md){
-		margin: 50px 0 60px 0;
+		margin: 20px 0;
 		padding: 0 40px;
 	}
 	@include medias(Lg){
-		margin: 60px 0 70px 0;
 		padding: 0 60px;
 	}
 	@include medias(Xl){
-		margin: 70px 0;
 		padding: 0 90px;
 	}
 
 	.formulario{
-		border: solid 2px map-get($map:$paleta,$key:"trece");
-		padding: 20px;
+		border:none;
+		padding: 30px;
+		box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 		margin-bottom: 20px;
 		@include medias(Sm){
 			padding: 40px;
 			margin-bottom: 30px;
 		}
-		@include medias(Md){
-			border: solid 3px map-get($map:$paleta,$key:"trece");
+		@include medias(Md){	
 			padding: 25px;
 			}
 		@include medias(Lg){
@@ -66,12 +76,10 @@
 				line-height: 2rem;
 				}
 			@include medias(Lg){
-				font-size: $textMd;
 				line-height: 2rem;
 				}
 			@include medias(Xl){
-				font-size: $textLg;
-				line-height: 3.2rem;
+				line-height: 2.8rem;
 				}
 		}
 		fieldset{
@@ -86,16 +94,17 @@
 		.btn_form{
 			@extend .btn_base;
 			color: $black;
+			height: 35px;
 			@include medias(Md){
 				margin-top: 5px;
 				width: 85px;
-				height: 30px;
+				height: 38px;
 				}
 			@include medias(Lg){
 				margin-right: 30px;
 				margin-top: 10px;
 				width: 100px;
-				height: 35px;
+				height: 40px;
 				font-size: $textSm;
 				}
 			@include medias(Xl){	
@@ -108,17 +117,18 @@
 	.btn_form_2{
 			@extend .btn_base;
 			color: $black;
+			height: 35px;
 			margin-left: 15px;
 			@include medias(Md){
 				margin-top: 5px;
 				width: 85px;
-				height: 30px;
+				height: 38px;
 				}
 			@include medias(Lg){
 				margin-left: 25px;
 				margin-top: 10px;
 				width: 100px;
-				height: 35px;
+				height: 40px;
 				font-size: $textSm;
 				}
 			@include medias(Xl){

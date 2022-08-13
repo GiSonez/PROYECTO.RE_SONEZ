@@ -2,15 +2,22 @@
 footer{
 	background-color: map-get($map:$paleta,$key:"catorce");
 	height: auto;
-	
 	padding: 40px 0 0 30px;
-	@include medias(Md){
-		
+	@include medias(Md){	
 		padding: 50px 0 0 30px;
 		}
+	@include medias(Xl){
+		padding: 60px 0 0 30px;
+	}
 	h3{
 		color: map-get($map:$paleta,$key:"quince");
-		font-size: 1.2rem;
+		font-size: 1.1rem;
+		letter-spacing: 0.1rem;
+		font-family: $secFont;
+		@include medias(Sm){
+			font-size: 1.2rem;
+			letter-spacing: none;
+		}
 		@include medias(Md){
 			line-height: 2.4rem
 			}
@@ -35,7 +42,7 @@ footer{
 		color: map-get($map:$paleta,$key:"quince");
 		font-size: 1.2rem;
 		@include medias(Xl){
-			font-size: $textSm;
+			font-size: $textMd;
 			}
 	}
 	a{
@@ -43,7 +50,7 @@ footer{
 		color: map-get($map:$paleta,$key:"quince");
 		font-size: 1.2rem;
 		@include medias(Xl){
-			font-size: $textSm;
+			font-size: $textMd;
 			}
 	}
 }	
@@ -67,7 +74,7 @@ footer{
 		font-size: 1.1rem;
 		}
 		@include medias(Xl){
-		font-size: 1.2rem;
+		font-size: 1.3rem;
 		}
 	}
 }	
