@@ -24,15 +24,15 @@
 		@include medias(Md){
 			font-size: $textMd;
 			line-height: 3rem;
-			}
+		}
 		@include medias(Lg){
 			font-size: $textLg;
 			line-height: 3.5rem;
-			}
+		}
 		@include medias(Xl){
 			font-size: $textXl;
 			line-height: 3.8rem;
-			}
+		}
 	}
 }
 
@@ -40,19 +40,19 @@
 	padding: 20px 50px;
 	@include medias(Xs){
 		padding: 25px 70px;
-		}
+	}
 	@include medias(Sm){
 		padding: 30px 120px;
-		}
+	}
 	@include medias(Md){
 		padding: 20px 15px 20px 100px;
-		}
+	}
 	@include medias(Lg){
 		padding: 25px 25px 25px 140px;
-		}
+	}
 	@include medias(Xl){
 		padding: 30px 30px 30px 200px;
-		}
+	}
 	img{
 		box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
 	}
@@ -63,22 +63,22 @@
 	padding: 5px 50px;
 	@include medias(Xs){
 		padding: 10px 70px;
-		}
+	}
 	@include medias(Sm){
 		padding: 10px 120px;
-		}
+	}
 	@include medias(Md){
 		padding: 20px 100px 10px 15px;
-		}
+	}
 	@include medias(Lg){
 		padding: 25px 140px 25px 25px;
-		}
+	}
 	@include medias(Xl){
 		padding: 30px 200px 30px 30px;
-		}
-		img{
-			box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
-		}
+	}
+	img{
+		box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+	}
 }
 
 	

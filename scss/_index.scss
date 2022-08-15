@@ -5,25 +5,24 @@
 	@include medias(Md){
 		@include d-flex(row-reverse, center, center);
 		margin: 0 10px 0 30px;
-		}
+	}
 	@include medias(Xl){
 		margin-right: 20px;
 		margin-left: 60px;
 		margin-bottom: 40px;
-		}
-}
+	}
 
 	.main_index__img{
 		width: 400px;
 		height: auto;
 		margin-bottom: 50px;
 		@include medias(Xs){
-		width: 560px;
-		height: 250px;
+			width: 560px;
+			height: 250px;
 		}
 		@include medias(Sm){
-		width: 760px;
-		height: 310px;
+			width: 760px;
+			height: 310px;
 		}
 		@include medias(Md){
 			width: 1300px;
@@ -38,7 +37,7 @@
 		@include medias(Xl){
 			width: 2300px;
 			margin-bottom: 25px;
-			}
+		}
 	}
 
 	.main_index__text{
@@ -46,14 +45,14 @@
 		@include medias(Md){
 			margin: 30px 20px 10px 30px;
 			padding-bottom: 15px;	
-			}
+		}
 		@include medias(Lg){
 			margin: 10px 30px 0 30px;
 			padding-bottom: 20px;
-			}
+		}
 		@include medias(Xl){
 			margin: 0 40px 0 40px;
-			}
+		}
 		h1{
 			font-family: $secFont;
 			text-align: $textLeft;
@@ -69,11 +68,11 @@
 			@include medias(Lg){
 				font-size: $textMd;
 				line-height: 2.8rem;
-				}
+			}
 			@include medias(Xl){
 				font-size: $textXl;
 				line-height: 3rem;
-				}
+			}
 		}
 		p{
 			text-align: $textLeft;
@@ -88,14 +87,14 @@
 			@include medias(Lg){
 				font-size: $textSm;
 				line-height: 2.8rem;
-				}
+			}
 			@include medias(Xl){
 				font-size: $textLg;
 				line-height: 3rem;
-				}
-		}
-				
+			}
+		}			
 	}
+}
 
 .aside_index{
 	@include d-flex(column, center, center);
@@ -111,30 +110,30 @@
 		@include d-flex(row, space-around, stretch);
 		padding-top: 60px;
 		padding-bottom: 20px;
-		}
+	}
 	@include medias(Lg){
 		padding-top: 70px;
 		padding-bottom: 20px;
-		}
+	}
 	@include medias(Xl){
 		padding-top: 100px;
 		padding-bottom: 30px;
-		}
+	}
 	h3{
 		font-family: $secFont;
 		font-size: $textMd;
 		line-height: 2.8rem;
 		@include medias(Md){
 			line-height: 3.2rem;
-			}
+		}
 		@include medias(Lg){
 			font-size: $textLg;
 			line-height: 3.5rem;
-			}
+		}
 		@include medias(Xl){
 			font-size: 1.8rem;
 			line-height: 3.8rem;
-			}
+		}
 	}
 	p{
 		text-align: $textJust;
@@ -143,15 +142,15 @@
 		@include medias(Md){
 			font-size: $textSm;
 			line-height: 2.6rem;	
-			}
+		}
 		@include medias(Lg){
 			font-size: $textMd;
 			line-height: 2.8rem;	
-			}
+		}
 		@include medias(Xl){
 			font-size: $textXl;
 			line-height: 3.2rem;	
-			}
+		}
 	}
 	.card{
 		border: none;
@@ -166,13 +165,13 @@
 		}
 		@include medias(Md){
 			width: 220px;
-			}
+		}
 		@include medias(Lg){
 			width: 260px;
-			}
+		}
 		@include medias(Xl){
 			width: 320px;
-			}
+		}
 	}
 }
 

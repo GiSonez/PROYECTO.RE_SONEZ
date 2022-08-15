@@ -1,89 +1,87 @@
 
-	.text_taller{
-		background-color: $blanco;
-		margin-top: 5px;
-		border: none;
-		padding: 45px 30px 20px 30px;
-		@include medias(Xs){
-			padding: 50px 50px 20px 35px;
-			}
-		@include medias(Sm){
-			margin-top: 2px;
-			padding: 60px 80px 30px 50px;
-			}
-		@include medias(Md){
-			margin-top: 0;
-			padding: 70px 150px 40px 60px;
-			}
-		@include medias(Lg){
-			padding: 80px 320px 60px 60px;
-			}
-		@include medias(Xl){
-			padding: 80px 500px 80px 100px;
-			}
-		p{
-			@include textoTitulo($textSm, 2.6rem, 0, 0, $black);
-			text-align: $textLeft;
-			@include medias(Lg){
-				@include textoTitulo($textMd, 2.6rem, 0, 0, $black);
-			}
-			@include medias(Xl){
-				font-size: $textLg;
-				line-height: 3rem;
-				}
-			a{
-				text-decoration: none;
-				color: $black;
-				font-weight: $textBold;
-				&:hover{
-					cursor: pointer;
-				}
-			}	
-		}
+.text_taller{
+	background-color: $blanco;
+	margin-top: 5px;
+	border: none;
+	padding: 45px 30px 20px 30px;
+	@include medias(Xs){
+		padding: 50px 50px 20px 35px;
 	}
-
-	.adorno_taller{
-		border: none;
-		margin: 40px;
-		@include medias(Xs){
-			margin: 50px 0;
-		}
-		@include medias(Sm){
-			margin: 60px 0;
-		}
-		@include medias(Md){
-			margin: 60px 0 70px 0;
-		}
+	@include medias(Sm){
+		margin-top: 2px;
+		padding: 60px 80px 30px 50px;
+	}
+	@include medias(Md){
+		margin-top: 0;
+		padding: 70px 150px 40px 60px;
+	}
+	@include medias(Lg){
+		padding: 80px 320px 60px 60px;
+	}
+	@include medias(Xl){
+		padding: 80px 500px 80px 100px;
+	}
+	p{
+		@include textoTitulo($textSm, 2.6rem, 0, 0, $black);
+		text-align: $textLeft;
 		@include medias(Lg){
-			margin: 70px 0 80px 0;
+			@include textoTitulo($textMd, 2.6rem, 0, 0, $black);
 		}
 		@include medias(Xl){
-			margin: 80px 0 90px 0;
+			font-size: $textLg;
+			line-height: 3rem;
 		}
-	}
-
-
-	.img_taller{
-		border: none;
-		padding: 40px 30px 0 30px;
-		@include medias(Xs){
-			padding: 50px 70px 0 70px;
-		}
-		@include medias(Sm){
-			padding: 70px 80px 0 80px;
-		}
-		@include medias(Md){
-			padding: 60px 120px 0 120px;
+		a{
+			text-decoration: none;
+			color: $black;
+			font-weight: $textBold;
+			&:hover{
+				cursor: pointer;
 			}
-		@include medias(Lg){
-			padding: 70px 140px 0 140px;
-			margin-bottom: 30px;
-		}
-		@include medias(Xl){
-			padding: 80px 250px 0 250px;
-		}
-		
+		}	
 	}
+}
+
+.adorno_taller{
+	border: none;
+	margin: 40px;
+	@include medias(Xs){
+		margin: 50px 0;
+	}
+	@include medias(Sm){
+		margin: 60px 0;
+	}
+	@include medias(Md){
+		margin: 60px 0 70px 0;
+	}
+	@include medias(Lg){
+		margin: 70px 0 80px 0;
+	}
+	@include medias(Xl){
+		margin: 80px 0 90px 0;
+	}	
+}
+
+.img_taller{
+	border: none;
+	padding: 40px 30px 0 30px;
+	@include medias(Xs){
+		padding: 50px 70px 0 70px;
+	}
+	@include medias(Sm){
+		padding: 70px 80px 0 80px;
+	}
+	@include medias(Md){
+		padding: 60px 120px 0 120px;
+	}
+	@include medias(Lg){
+		padding: 70px 140px 0 140px;
+		margin-bottom: 30px;
+	}
+	@include medias(Xl){
+		padding: 80px 250px 0 250px;
+	}		
+}
 
 
 

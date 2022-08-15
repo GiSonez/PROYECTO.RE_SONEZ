@@ -8,7 +8,10 @@ $mainFont:'Poppins', sans-serif;
 
 
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
 $secFont: 'Michroma', sans-serif;
+
+
 
 //font sizes
 $textSm:1.3rem;
@@ -121,18 +124,12 @@ $paleta:(
 	"tres": #766049,
 	"cuatro": #BBA786,
 	"cinco": #F6ECDE,
-	"seis": #BDB9AE,
-	"siete": #E3E3E3,
-	"ocho": #7C875F,
+	"seis": #696767,
+	"siete": #E2C16F,
+	"ocho": #FCC743,
 	"nueve": #D9B777,
-	"diez": #E2C16F,
-	"once": #F2DE79,
-	"doce": #FCC743,
-	"trece": #E2DEDA,
-	"catorce": #F3F2D4,
-	"quince": #696767,
-	"dieciseis": rgba(242,222,121,0.6),);
-
+	"diez": #E2C16F,);
+	
 //map-get($map:$paleta,$key:"tres");
 
 

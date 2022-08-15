@@ -10,9 +10,6 @@ html{
 	}
 
 
-
-//barra titular 
-
 .titulo{
 	margin-top: 30px;
 	padding-left: 30px;
@@ -45,26 +42,26 @@ html{
 		@include medias(Xs){
 			@include textoTitulo(2.6rem, 0, 0, 0, $black);
 			padding-top: 35px;
-			}
+		}
 		@include medias(Sm){
 			@include textoTitulo(3.1rem, 0, 0, 0, $black);	
 			padding-top: 40px;
-			}
+		}
 		@include medias(Md){
 			@include textoTitulo(3.5rem, 0, 0, 0, $black);
 			padding-top: 43px;
 			padding-left: 40px;
-			}
+		}
 		@include medias(Lg){
 			@include textoTitulo(4rem, 0, 0, 0, $black);
 			padding-top: 45px;
 			padding-left: 40px;
-			}
+		}
 		@include medias(Xl){
 			@include textoTitulo(5rem, 0, 0, 0, $black);
 			padding-top: 50px;
 			padding-left: 80px;	
-			}
+		}
 	}
 }
 

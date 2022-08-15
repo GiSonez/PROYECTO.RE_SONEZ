@@ -12,42 +12,41 @@ nav{
 	@include medias(Md){
 		margin: 20px 20px 30px 55px;
 		font-size: $textSm;
-		}
+	}
 	@include medias(Lg){
 		margin: 25px 30px 30px 55px;
-		}
+	}
 	@include medias(Xl){
 		margin: 30px 50px 35px 95px;	
 		font-size: $textLg;
-		}
+	}
 
 	.nav_logo{
 		width: 100px;
 		@include medias(Sm){
 			width: 105px;
-			}
+		}
 		@include medias(Md){
 			width: 110px;
-			}
+		}
 		@include medias(Lg){
 			width: 120px;
-			}
+		}
 		@include medias(Xl){
 			width: 140px;
-			
-			}
+		}
 	}
 
 	ul{
-		border-left: solid 2px map-get($map:$paleta,$key:"diez");
+		border-left: solid 2px map-get($map:$paleta,$key:"siete");
 		@include medias(Md){
-			border-left: solid 2.5px map-get($map:$paleta,$key:"diez");
+			border-left: solid 2.5px map-get($map:$paleta,$key:"siete");
 		}
 		@include medias(Lg){
-			border-left: solid 2.8px map-get($map:$paleta,$key:"diez");
+			border-left: solid 2.8px map-get($map:$paleta,$key:"siete");
 		}
 		@include medias(Xl){
-			border-left: solid 3px map-get($map:$paleta,$key:"diez");
+			border-left: solid 3px map-get($map:$paleta,$key:"siete");
 		}
 		li{
 			a{

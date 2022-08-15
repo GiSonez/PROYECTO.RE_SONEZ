@@ -5,12 +5,12 @@ footer{
 	padding: 40px 0 0 30px;
 	@include medias(Md){	
 		padding: 50px 0 0 30px;
-		}
+	}
 	@include medias(Xl){
 		padding: 60px 0 0 30px;
 	}
 	h3{
-		color: map-get($map:$paleta,$key:"quince");
+		color: map-get($map:$paleta,$key:"seis");
 		font-size: 1.1rem;
 		letter-spacing: 0.1rem;
 		font-family: $secFont;
@@ -20,13 +20,13 @@ footer{
 		}
 		@include medias(Md){
 			line-height: 2.4rem
-			}
+		}
 		@include medias(Lg){
 			line-height: 2.6rem
-			}
+		}
 		@include medias(Xl){
 			font-size: $textSm;
-			}
+		}
 	}
 	.pie_icon{
 		width: 15px;
@@ -36,22 +36,22 @@ footer{
 			width: 20px;
 			height: 20px;
 			padding: 1px;
-			}
+		}
 	}
 	p{
-		color: map-get($map:$paleta,$key:"quince");
+		color: map-get($map:$paleta,$key:"seis");
 		font-size: 1.2rem;
 		@include medias(Xl){
 			font-size: $textMd;
-			}
+		}
 	}
 	a{
 		text-decoration: none;
-		color: map-get($map:$paleta,$key:"quince");
+		color: map-get($map:$paleta,$key:"seis");
 		font-size: 1.2rem;
 		@include medias(Xl){
 			font-size: $textMd;
-			}
+		}
 	}
 }	
 
@@ -67,7 +67,7 @@ footer{
 		margin-top: 90px;
 	}
 	p{
-		color: map-get($map:$paleta,$key:"quince");
+		color: map-get($map:$paleta,$key:"seis");
 		font-size: 1rem;
 		text-align: $textLeft;
 		@include medias(Md){
