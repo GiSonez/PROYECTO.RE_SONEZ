@@ -1,12 +1,12 @@
 
 .error{
 	border: none;
-	padding: 30px 20px;
+	padding: 10px;
 	@include medias(Xs){
-		padding: 40px;
+		padding: 15px;
 	}
 	@include medias(Sm){
-		padding: 20px 120px;
+		padding: 20px;
 	}
 	@include medias(Md){
 		padding: 10px;
@@ -15,32 +15,32 @@
 		padding: 15px;
 	}
 	@include medias(Xl){
-		padding: 0;
+		padding: 10px;
 	}
 	
 	.error__text{
-		padding: 10px 20px;
+		padding: 5px 40px 0 40px;
 		text-align: $textCenter;
 		font-size: $textLg;
 		@include medias(Xs){
 			font-size: $textMd;
 		}
 		@include medias(Sm){
-			padding-left: 15px;	
+			font-size: $textLg;
+			padding: 10px 0 0 0;	
 		}
 		@include medias(Md){
-			padding: 0 100px 0 10px;
+			padding: 0 110px 0 0;
 			text-align: $textLeft;
 			font-size: $textXl;	
 			line-height: 3rem;
 		}
 		@include medias(Lg){
-			padding: 0 100px 0 15px;
+			padding: 0 120px 0 10px;
 			font-size: 2rem;	
 			line-height: 3.5rem;
 		}
 		@include medias(Xl){
-			padding: 0 80px 0 20px;
 			font-size: 2.5rem;	
 			line-height: 5rem;
 		}

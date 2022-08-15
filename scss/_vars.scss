@@ -27,7 +27,7 @@ $textCenter:center;
 $textJust:justify;
 
 //colors
-$colorGris:#EFEAD1;
+$gris:#EFEAD1;
 $black:#3F3C3C;
 $blanco: #F8F5F5;
 
@@ -36,7 +36,7 @@ $blanco: #F8F5F5;
 //extends
 
 .btn_base{
-	background: linear-gradient(to top, $colorGris, white);
+	background: linear-gradient(to top, $gris, white);
 	width: 80px;
 	height: 25px;
 	margin-right: 10px;
@@ -120,7 +120,7 @@ $paleta:(
 	"dos": #d9b592,
 	"tres": #766049,
 	"cuatro": #BBA786,
-	"cinco": #E2CEB3,
+	"cinco": #F6ECDE,
 	"seis": #BDB9AE,
 	"siete": #E3E3E3,
 	"ocho": #7C875F,
