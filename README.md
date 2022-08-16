@@ -7,7 +7,7 @@ Consta de 5 pestañas:
 
 -	Índex: es lo primero que ve el usuario e intenté encontrar una imagen y un texto breve que resuma al sitio. Scrolleando  hacia abajo, hay 3 cards que describen las principales  técnicas que se pueden realizar sobre un mueble, y debajo de ellas, una card que lleva directo al pedido de presupuesto.
 
--	El taller: es la página con más texto, pues habla del taller, presenta a la dueña y además describe los pasos para pedir un presupuesto. Dentro de dicho texto, se encuentran 2 palabras en negrita: “presupuesto” y “tienda”, que linkean hacia las pestañas de contacto y tienda, respectivamente. Hacia abajo, el único carrusel del sitio, con 4 imágenes relacionadas al taller.
+-	El taller: es la página con más texto, pues habla del taller, presenta a la dueña y además describe los pasos para pedir un presupuesto. Dentro de dicho texto, se encuentran 2 palabras en negrita: “presupuesto” y “shop”, que linkean hacia las pestañas de contacto y tienda, respectivamente. Hacia abajo, el único carrusel del sitio, con 4 imágenes relacionadas al taller.
 
 -	Antes y después: la idea es mostrar el cambio que tienen los muebles luego de ser reciclados, y cómo se trabaja en el taller. Sin mucha idea de diseño, pero recordando un consejo de la profesora, distribuí las imágenes de modo que no queden las más oscuras hacia un lado y las claras hacia el otro, y generar así un equilibrio visual. Aclaro esto, porque recibí sugerencias sobre ubicar hacia la derecha los “antes” y a la izquierda los “después”, pero a mi criterio, quedaba feo.
  
