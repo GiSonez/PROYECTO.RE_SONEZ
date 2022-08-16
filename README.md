@@ -16,6 +16,7 @@ Consta de 5 pestañas:
 -	Tienda: claramente no es una tienda funcional, pero intenta parecerse a una. Esta sección muestra muebles reciclados en el taller, exclusivamente para la venta. 
 
 ERROR 404
+
 Se puede visualizar esta página desde:
 -	“Preguntas frecuentes” en el footer.
 -	Todos los botones “comprar” de la tienda.
@@ -28,6 +29,7 @@ Herramientas utilizadas:
 -	Balsamiq: para los wiframes que me solicitaron al inicio del curso. Estos, muestran lo que inicialmente pensé para el sitio, en comparación con lo que finalmente llegó a ser.
 
 Diseño:
+
 La idea siempre fue un diseño minimalista y en colores neutros. No cuento con conocimientos de diseño e intenté hacerlo lo mejor que pude. 
 
 Gise.
