@@ -999,55 +999,56 @@ html {
 }
 .forms .formulario .btn_form {
   color: #3F3C3C;
-  height: 35px;
+  height: 25px;
+  margin-top: 15px;
 }
 @media (min-width: 768px) {
   .forms .formulario .btn_form {
-    margin-top: 5px;
+    margin-top: 20px;
     width: 85px;
-    height: 38px;
+    height: 30px;
   }
 }
 @media (min-width: 992px) {
   .forms .formulario .btn_form {
     margin-right: 30px;
-    margin-top: 10px;
+    margin-top: 30px;
     width: 100px;
-    height: 40px;
+    height: 35px;
     font-size: 1.3rem;
   }
 }
 @media (min-width: 1200px) {
   .forms .formulario .btn_form {
     margin-right: 45px;
-    margin-top: 15px;
+    margin-top: 35px;
   }
 }
 .forms .btn_form_2 {
   color: #3F3C3C;
-  height: 35px;
+  height: 25px;
+  margin-top: 15px;
   margin-left: 15px;
 }
 @media (min-width: 768px) {
   .forms .btn_form_2 {
-    margin-top: 5px;
+    margin-top: 20px;
     width: 85px;
-    height: 38px;
+    height: 30px;
   }
 }
 @media (min-width: 992px) {
   .forms .btn_form_2 {
     margin-left: 25px;
-    margin-top: 10px;
+    margin-top: 30px;
     width: 100px;
-    height: 40px;
+    height: 35px;
     font-size: 1.3rem;
   }
 }
 @media (min-width: 1200px) {
   .forms .btn_form_2 {
     margin-left: 35px;
-    margin-top: 15px;
   }
 }
 
