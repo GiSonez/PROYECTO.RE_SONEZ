@@ -1,8 +1,8 @@
-Proyecto final del curso de desarrollo web de Coder House 
+Proyecto final del curso de desarrollo web de Coder House. Solo HTML y CSS.
 
 Descripción general:
 
-Se trata de un sitio web sobre un taller de reciclado de muebles antiguos, y es el primer sitio web que desarrollo. Solo con HTML y CSS.
+Se trata de un sitio web sobre un taller de reciclado de muebles antiguos, y es el primer sitio web que desarrollo. 
 Consta de 5 pestañas:
 
 -	Índex: es lo primero que ve el usuario e intenté encontrar una imagen y un texto breve que resuma al sitio. Scrolleando  hacia abajo, hay 3 cards que describen las principales  técnicas que se pueden realizar sobre un mueble, y debajo de ellas, una card que lleva directo al pedido de presupuesto.
